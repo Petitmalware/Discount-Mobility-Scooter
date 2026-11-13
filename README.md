@@ -43,3 +43,5 @@ Local preview identity simulation is loopback-only and excluded from production.
 Aim for at least 8 distinct images of the exact model. Published products require at least 5; galleries with 5–7 require a written source-availability exception. Drafts can be saved with fewer. Galleries support up to 16 images, descriptive captions, keyboard navigation, a visible thumbnail grid, and full-size viewing. Common CDN size variants do not count as different photos.
 
 Product source URLs, reference prices, research dates and gallery exception notes appear only in admin. Customer pages and `/api/catalog` receive an explicit public product projection; the full seed catalog is never imported into the customer client bundle.
+
+After changing seed products, run `npm run catalog:sync` to refresh the customer-only seed JSON. The build also regenerates it, and the boundary tests require it to match the public projection. Live admin overrides are still loaded from the public catalog API.

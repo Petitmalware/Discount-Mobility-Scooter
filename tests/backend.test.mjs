@@ -26,6 +26,10 @@ const product = { id: "travel", name: "Travel scooter", price: 649.99, active: t
 
 test("customer catalog excludes admin research and preserves the complete gallery", async () => {
   const catalog=JSON.parse(await fs.readFile(new URL("../lib/catalog-data.json",import.meta.url),"utf8"));
+  const publicCatalog=JSON.parse(await fs.readFile(new URL("../lib/public-catalog-data.json",import.meta.url),"utf8"));
+  const categoryKey=value=>value.toLowerCase().replaceAll(" ","-");
+  const normalized=catalog.map(record=>publicProduct({...record,category:categoryKey(record.category),categories:record.categories.map(categoryKey)}));
+  assert.deepEqual(publicCatalog,JSON.parse(JSON.stringify(normalized)),"Run npm run catalog:sync after changing seed products");
   for(const record of catalog){
     const safe=publicProduct({...record,futureAdminNote:"Private research"});
     for(const field of ["referencePrice","sourceUrl","priceCheckedAt","galleryExceptionNote","futureAdminNote"]){

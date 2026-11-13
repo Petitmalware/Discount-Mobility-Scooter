@@ -3,6 +3,7 @@
 import {useEffect, useMemo, useRef, useState} from "react";
 import {ArrowDown, ArrowRight, ArrowUpRight, BatteryCharging, Check, ChevronDown, ChevronRight, CircleHelp, Compass, Feather, Gauge, Heart, HeartHandshake, Mail, Menu, Minus, PackageCheck, Phone, Plus, Search, ShieldCheck, ShoppingBag, SlidersHorizontal, Truck, Users, Weight, X} from "lucide-react";
 import type {PublicProduct as Product, StoreSettings} from "@/lib/types";
+import publicCatalog from "@/lib/public-catalog-data.json";
 import ProductGallery from "./product-gallery";
 
 const categories = [
@@ -18,8 +19,8 @@ type Cart = {productId:string; quantity:number}[];
 type Modal = "product"|"cart"|"checkout"|"compare"|"guide"|"info"|null;
 const defaults:StoreSettings = {email:"",phone:"",country:"United States",currency:"USD",btcEnabled:false,usdtEnabled:false,btcConfigured:false,usdtConfigured:false,shippingNote:"Delivery options and costs are confirmed in your personal quote.",returnsNote:"Ask for the product-specific returns and warranty terms before accepting your quote."};
 
-export default function Storefront({initialSlug,initialInfo,initialProducts}:{initialSlug?:string;initialInfo?:string;initialProducts:Product[]}) {
-  const [products,setProducts] = useState<Product[]>(initialProducts);
+export default function Storefront({initialSlug,initialInfo}:{initialSlug?:string;initialInfo?:string}) {
+  const [products,setProducts] = useState<Product[]>((publicCatalog as Product[]).filter(p=>p.active));
   const [settings,setSettings] = useState<StoreSettings>(defaults);
   const [loadError,setLoadError]=useState(false);
   const [category,setCategory]=useState("all");

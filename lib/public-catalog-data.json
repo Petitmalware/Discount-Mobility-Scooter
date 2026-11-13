@@ -1,0 +1,1843 @@
+[
+  {
+    "id": "go-go-elite-traveller-gen-3",
+    "slug": "go-go-elite-traveller-gen-3",
+    "name": "Go Go Elite Traveller Gen 3",
+    "brand": "Pride Mobility",
+    "category": "travel",
+    "categories": [
+      "travel",
+      "4-wheel"
+    ],
+    "price": 1599,
+    "description": "A roomier travel scooter with a textured deck, mesh-back seat and compact turning. Separates into five sections for transport.",
+    "image": "/images/products/go-go-elite-traveller-gen-3/01.jpg",
+    "images": [
+      "/images/products/go-go-elite-traveller-gen-3/01.jpg",
+      "/images/products/go-go-elite-traveller-gen-3/02.jpg",
+      "/images/products/go-go-elite-traveller-gen-3/03.jpg",
+      "/images/products/go-go-elite-traveller-gen-3/04.jpg",
+      "/images/products/go-go-elite-traveller-gen-3/05.jpg",
+      "/images/products/go-go-elite-traveller-gen-3/06.jpg",
+      "/images/products/go-go-elite-traveller-gen-3/07.jpg",
+      "/images/products/go-go-elite-traveller-gen-3/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/go-go-elite-traveller-gen-3/01.jpg",
+        "alt": "Gen 3 in red, front perspective",
+        "caption": "Gen 3 in red, front perspective"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-gen-3/02.jpg",
+        "alt": "Gen 3 in red, right-side profile",
+        "caption": "Gen 3 in red, right-side profile"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-gen-3/03.jpg",
+        "alt": "Gen 3 in red, left-side profile",
+        "caption": "Gen 3 in red, left-side profile"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-gen-3/04.jpg",
+        "alt": "Gen 3 front wheels and deck detail",
+        "caption": "Gen 3 front wheels and deck detail"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-gen-3/05.jpg",
+        "alt": "Gen 3 separated for transport",
+        "caption": "Gen 3 separated for transport"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-gen-3/06.jpg",
+        "alt": "Gen 3 in blue, side profile",
+        "caption": "Gen 3 in blue, side profile"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-gen-3/07.jpg",
+        "alt": "Gen 3 in blue, front perspective",
+        "caption": "Gen 3 in blue, front perspective"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-gen-3/08.jpg",
+        "alt": "Gen 3 in purple, front perspective",
+        "caption": "Gen 3 in purple, front perspective"
+      }
+    ],
+    "rangeMiles": 8.9,
+    "maxSpeedMph": 4.23,
+    "capacityLb": 300,
+    "weightLb": null,
+    "featured": true,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-3-wheel",
+    "slug": "vive-3-wheel",
+    "name": "3-Wheel Travel Scooter",
+    "brand": "Vive Mobility",
+    "category": "3-wheel",
+    "categories": [
+      "travel",
+      "3-wheel"
+    ],
+    "price": 579,
+    "description": "An approachable everyday scooter for errands and tighter indoor spaces, with a swivel seat, removable basket and simple speed control.",
+    "image": "/images/products/vive-3-wheel.jpg",
+    "images": [
+      "/images/products/vive-3-wheel.jpg",
+      "/images/products/vive-3-wheel/11.jpg",
+      "/images/products/vive-3-wheel/03.jpg",
+      "/images/products/vive-3-wheel/04.jpg",
+      "/images/products/vive-3-wheel/05.jpg",
+      "/images/products/vive-3-wheel/06.jpg",
+      "/images/products/vive-3-wheel/07.jpg",
+      "/images/products/vive-3-wheel/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/vive-3-wheel.jpg",
+        "alt": "3-Wheel Travel Scooter — blue front angle",
+        "caption": "Blue front angle"
+      },
+      {
+        "src": "/images/products/vive-3-wheel/11.jpg",
+        "alt": "3-Wheel Travel Scooter — red color option",
+        "caption": "Red color option"
+      },
+      {
+        "src": "/images/products/vive-3-wheel/03.jpg",
+        "alt": "3-Wheel Travel Scooter — outdoor lifestyle view",
+        "caption": "Outdoor lifestyle view"
+      },
+      {
+        "src": "/images/products/vive-3-wheel/04.jpg",
+        "alt": "3-Wheel Travel Scooter — turning space illustration",
+        "caption": "Turning space illustration"
+      },
+      {
+        "src": "/images/products/vive-3-wheel/05.jpg",
+        "alt": "3-Wheel Travel Scooter — disassembly for transport",
+        "caption": "Disassembly for transport"
+      },
+      {
+        "src": "/images/products/vive-3-wheel/06.jpg",
+        "alt": "3-Wheel Travel Scooter — adjustable seating details",
+        "caption": "Adjustable seating details"
+      },
+      {
+        "src": "/images/products/vive-3-wheel/07.jpg",
+        "alt": "3-Wheel Travel Scooter — wheel and surface details",
+        "caption": "Wheel and surface details"
+      },
+      {
+        "src": "/images/products/vive-3-wheel/08.jpg",
+        "alt": "3-Wheel Travel Scooter — control panel details",
+        "caption": "Control panel details"
+      }
+    ],
+    "rangeMiles": 12.4,
+    "maxSpeedMph": 3.7,
+    "capacityLb": 265,
+    "weightLb": 77,
+    "featured": true,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-4-wheel",
+    "slug": "vive-4-wheel",
+    "name": "4-Wheel Travel Scooter",
+    "brand": "Vive Mobility",
+    "category": "4-wheel",
+    "categories": [
+      "travel",
+      "4-wheel"
+    ],
+    "price": 629,
+    "description": "A compact four-wheel option with a height-adjustable swivel seat, front basket and removable battery pack for everyday outings.",
+    "image": "/images/products/vive-4-wheel.jpg",
+    "images": [
+      "/images/products/vive-4-wheel.jpg",
+      "/images/products/vive-4-wheel/11.png",
+      "/images/products/vive-4-wheel/03.jpg",
+      "/images/products/vive-4-wheel/04.jpg",
+      "/images/products/vive-4-wheel/05.jpg",
+      "/images/products/vive-4-wheel/06.jpg",
+      "/images/products/vive-4-wheel/07.jpg",
+      "/images/products/vive-4-wheel/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/vive-4-wheel.jpg",
+        "alt": "4-Wheel Travel Scooter — blue front angle",
+        "caption": "Blue front angle"
+      },
+      {
+        "src": "/images/products/vive-4-wheel/11.png",
+        "alt": "4-Wheel Travel Scooter — ruby red color option",
+        "caption": "Ruby red color option"
+      },
+      {
+        "src": "/images/products/vive-4-wheel/03.jpg",
+        "alt": "4-Wheel Travel Scooter — outdoor lifestyle view",
+        "caption": "Outdoor lifestyle view"
+      },
+      {
+        "src": "/images/products/vive-4-wheel/04.jpg",
+        "alt": "4-Wheel Travel Scooter — transport and storage",
+        "caption": "Transport and storage"
+      },
+      {
+        "src": "/images/products/vive-4-wheel/05.jpg",
+        "alt": "4-Wheel Travel Scooter — adjustable seating details",
+        "caption": "Adjustable seating details"
+      },
+      {
+        "src": "/images/products/vive-4-wheel/06.jpg",
+        "alt": "4-Wheel Travel Scooter — wheel and surface details",
+        "caption": "Wheel and surface details"
+      },
+      {
+        "src": "/images/products/vive-4-wheel/07.jpg",
+        "alt": "4-Wheel Travel Scooter — control panel details",
+        "caption": "Control panel details"
+      },
+      {
+        "src": "/images/products/vive-4-wheel/08.jpg",
+        "alt": "4-Wheel Travel Scooter — frame and capacity details",
+        "caption": "Frame and capacity details"
+      }
+    ],
+    "rangeMiles": 12,
+    "maxSpeedMph": 3.7,
+    "capacityLb": 265,
+    "weightLb": 88.2,
+    "featured": true,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-sport-4-wheel",
+    "slug": "go-go-sport-4-wheel",
+    "name": "Go Go Sport 4-Wheel",
+    "brand": "Pride Mobility",
+    "category": "travel",
+    "categories": [
+      "travel",
+      "4-wheel"
+    ],
+    "price": 2099,
+    "description": "A versatile travel scooter with bright front lighting, easy disassembly and EZ Turn technology for a tighter turning circle.",
+    "image": "/images/products/go-go-sport-4-wheel/01.jpg",
+    "images": [
+      "/images/products/go-go-sport-4-wheel/01.jpg",
+      "/images/products/go-go-sport-4-wheel/02.jpg",
+      "/images/products/go-go-sport-4-wheel/03.jpg",
+      "/images/products/go-go-sport-4-wheel/04.jpg",
+      "/images/products/go-go-sport-4-wheel/05.jpg",
+      "/images/products/go-go-sport-4-wheel/06.jpg",
+      "/images/products/go-go-sport-4-wheel/07.jpg",
+      "/images/products/go-go-sport-4-wheel/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/go-go-sport-4-wheel/01.jpg",
+        "alt": "Go Go Sport S74 in blue, front perspective",
+        "caption": "Go Go Sport S74 in blue, front perspective"
+      },
+      {
+        "src": "/images/products/go-go-sport-4-wheel/02.jpg",
+        "alt": "Go Go Sport S74 in red, front perspective",
+        "caption": "Go Go Sport S74 in red, front perspective"
+      },
+      {
+        "src": "/images/products/go-go-sport-4-wheel/03.jpg",
+        "alt": "Go Go Sport S74 viewed from the front",
+        "caption": "Go Go Sport S74 viewed from the front"
+      },
+      {
+        "src": "/images/products/go-go-sport-4-wheel/04.jpg",
+        "alt": "Go Go Sport S74 front wheels turning",
+        "caption": "Go Go Sport S74 front wheels turning"
+      },
+      {
+        "src": "/images/products/go-go-sport-4-wheel/05.jpg",
+        "alt": "Go Go Sport S74 separated for transport",
+        "caption": "Go Go Sport S74 separated for transport"
+      },
+      {
+        "src": "/images/products/go-go-sport-4-wheel/06.jpg",
+        "alt": "Go Go Sport S74 swivel-seat demonstration",
+        "caption": "Go Go Sport S74 swivel-seat demonstration"
+      },
+      {
+        "src": "/images/products/go-go-sport-4-wheel/07.jpg",
+        "alt": "Go Go Sport S74 in blue, side profile",
+        "caption": "Go Go Sport S74 in blue, side profile"
+      },
+      {
+        "src": "/images/products/go-go-sport-4-wheel/08.jpg",
+        "alt": "Go Go Sport S74 foot deck detail",
+        "caption": "Go Go Sport S74 foot deck detail"
+      }
+    ],
+    "rangeMiles": 12,
+    "maxSpeedMph": 4.7,
+    "capacityLb": 325,
+    "weightLb": null,
+    "featured": true,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-auto-folding",
+    "slug": "vive-auto-folding",
+    "name": "Automatic Folding Scooter",
+    "brand": "Vive Mobility",
+    "category": "folding",
+    "categories": [
+      "folding",
+      "travel",
+      "4-wheel"
+    ],
+    "price": 749,
+    "description": "Folds and unfolds with its remote control for convenient storage. A compact choice for smooth indoor and outdoor surfaces.",
+    "image": "/images/products/vive-auto-folding.jpg",
+    "images": [
+      "/images/products/vive-auto-folding.jpg",
+      "/images/products/vive-auto-folding/02.jpg",
+      "/images/products/vive-auto-folding/03.jpg",
+      "/images/products/vive-auto-folding/04.jpg",
+      "/images/products/vive-auto-folding/05.jpg",
+      "/images/products/vive-auto-folding/06.jpg",
+      "/images/products/vive-auto-folding/07.jpg",
+      "/images/products/vive-auto-folding/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/vive-auto-folding.jpg",
+        "alt": "Automatic Folding Scooter — black front angle",
+        "caption": "Black front angle"
+      },
+      {
+        "src": "/images/products/vive-auto-folding/02.jpg",
+        "alt": "Automatic Folding Scooter — outdoor lifestyle view",
+        "caption": "Outdoor lifestyle view"
+      },
+      {
+        "src": "/images/products/vive-auto-folding/03.jpg",
+        "alt": "Automatic Folding Scooter — folded transport configuration",
+        "caption": "Folded transport configuration"
+      },
+      {
+        "src": "/images/products/vive-auto-folding/04.jpg",
+        "alt": "Automatic Folding Scooter — storage and trunk illustration",
+        "caption": "Storage and trunk illustration"
+      },
+      {
+        "src": "/images/products/vive-auto-folding/05.jpg",
+        "alt": "Automatic Folding Scooter — battery and charging details",
+        "caption": "Battery and charging details"
+      },
+      {
+        "src": "/images/products/vive-auto-folding/06.jpg",
+        "alt": "Automatic Folding Scooter — remote folding details",
+        "caption": "Remote folding details"
+      },
+      {
+        "src": "/images/products/vive-auto-folding/07.jpg",
+        "alt": "Automatic Folding Scooter — control panel details",
+        "caption": "Control panel details"
+      },
+      {
+        "src": "/images/products/vive-auto-folding/08.jpg",
+        "alt": "Automatic Folding Scooter — side profile",
+        "caption": "Side profile"
+      }
+    ],
+    "rangeMiles": 11.3,
+    "maxSpeedMph": 3.73,
+    "capacityLb": 220,
+    "weightLb": 55.11,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-neptune",
+    "slug": "vive-neptune",
+    "name": "Neptune Mobility Scooter",
+    "brand": "Vive Mobility",
+    "category": "4-wheel",
+    "categories": [
+      "4-wheel",
+      "outdoor"
+    ],
+    "price": 829,
+    "description": "A comfortable four-wheel scooter with 9-inch flat-free tires, an adjustable seat and quick-connect removable battery.",
+    "image": "/images/products/vive-neptune.jpg",
+    "images": [
+      "/images/products/vive-neptune.jpg",
+      "/images/products/vive-neptune/02.jpg",
+      "/images/products/vive-neptune/03.jpg",
+      "/images/products/vive-neptune/04.jpg",
+      "/images/products/vive-neptune/11.jpg",
+      "/images/products/vive-neptune/06.jpg",
+      "/images/products/vive-neptune/07.jpg",
+      "/images/products/vive-neptune/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/vive-neptune.jpg",
+        "alt": "Neptune Mobility Scooter — midnight blue front angle",
+        "caption": "Midnight blue front angle"
+      },
+      {
+        "src": "/images/products/vive-neptune/02.jpg",
+        "alt": "Neptune Mobility Scooter — complete scooter view",
+        "caption": "Complete scooter view"
+      },
+      {
+        "src": "/images/products/vive-neptune/03.jpg",
+        "alt": "Neptune Mobility Scooter — seat and comfort details",
+        "caption": "Seat and comfort details"
+      },
+      {
+        "src": "/images/products/vive-neptune/04.jpg",
+        "alt": "Neptune Mobility Scooter — assembly and disassembly",
+        "caption": "Assembly and disassembly"
+      },
+      {
+        "src": "/images/products/vive-neptune/11.jpg",
+        "alt": "Neptune Mobility Scooter — tiller control panel",
+        "caption": "Tiller control panel"
+      },
+      {
+        "src": "/images/products/vive-neptune/06.jpg",
+        "alt": "Neptune Mobility Scooter — wheel and clearance details",
+        "caption": "Wheel and clearance details"
+      },
+      {
+        "src": "/images/products/vive-neptune/07.jpg",
+        "alt": "Neptune Mobility Scooter — frame and capacity details",
+        "caption": "Frame and capacity details"
+      },
+      {
+        "src": "/images/products/vive-neptune/08.jpg",
+        "alt": "Neptune Mobility Scooter — adjustable seating details",
+        "caption": "Adjustable seating details"
+      }
+    ],
+    "rangeMiles": 16,
+    "maxSpeedMph": 3.75,
+    "capacityLb": 300,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-elite-traveller-3-wheel",
+    "slug": "go-go-elite-traveller-3-wheel",
+    "name": "Go Go Elite Traveller 3-Wheel",
+    "brand": "Pride Mobility",
+    "category": "3-wheel",
+    "categories": [
+      "travel",
+      "3-wheel"
+    ],
+    "price": 1499,
+    "description": "A compact three-wheel travel scooter with a 33-inch turning radius, removable basket and five-piece disassembly.",
+    "image": "/images/products/go-go-elite-traveller-3-wheel/01.jpg",
+    "images": [
+      "/images/products/go-go-elite-traveller-3-wheel/01.jpg",
+      "/images/products/go-go-elite-traveller-3-wheel/02.jpg",
+      "/images/products/go-go-elite-traveller-3-wheel/03.jpg",
+      "/images/products/go-go-elite-traveller-3-wheel/04.jpg",
+      "/images/products/go-go-elite-traveller-3-wheel/05.jpg",
+      "/images/products/go-go-elite-traveller-3-wheel/06.jpg",
+      "/images/products/go-go-elite-traveller-3-wheel/07.jpg",
+      "/images/products/go-go-elite-traveller-3-wheel/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/go-go-elite-traveller-3-wheel/01.jpg",
+        "alt": "Elite Traveller SC40E in red, front perspective",
+        "caption": "Elite Traveller SC40E in red, front perspective"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-3-wheel/02.jpg",
+        "alt": "Elite Traveller SC40E tiller charging detail",
+        "caption": "Elite Traveller SC40E tiller charging detail"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-3-wheel/03.jpg",
+        "alt": "Elite Traveller SC40E used outdoors",
+        "caption": "Elite Traveller SC40E used outdoors"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-3-wheel/04.jpg",
+        "alt": "Elite Traveller SC40E side profile",
+        "caption": "Elite Traveller SC40E side profile"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-3-wheel/05.jpg",
+        "alt": "Elite Traveller SC40E separated for transport",
+        "caption": "Elite Traveller SC40E separated for transport"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-3-wheel/06.jpg",
+        "alt": "Elite Traveller SC40E in blue, front perspective",
+        "caption": "Elite Traveller SC40E in blue, front perspective"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-3-wheel/07.jpg",
+        "alt": "Elite Traveller SC40E in blue, side profile",
+        "caption": "Elite Traveller SC40E in blue, side profile"
+      },
+      {
+        "src": "/images/products/go-go-elite-traveller-3-wheel/08.jpg",
+        "alt": "Elite Traveller SC40E frame and lowered tiller during loading",
+        "caption": "Elite Traveller SC40E frame and lowered tiller during loading"
+      }
+    ],
+    "rangeMiles": 7.25,
+    "maxSpeedMph": 4,
+    "capacityLb": 300,
+    "weightLb": 95,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-sport-3-wheel",
+    "slug": "go-go-sport-3-wheel",
+    "name": "Go Go Sport 3-Wheel",
+    "brand": "Pride Mobility",
+    "category": "3-wheel",
+    "categories": [
+      "travel",
+      "3-wheel"
+    ],
+    "price": 1899,
+    "description": "A maneuverable three-wheel scooter with an ergonomic delta tiller, front lighting and easy transport disassembly.",
+    "image": "/images/products/go-go-sport-3-wheel/01.jpg",
+    "images": [
+      "/images/products/go-go-sport-3-wheel/01.jpg",
+      "/images/products/go-go-sport-3-wheel/02.jpg",
+      "/images/products/go-go-sport-3-wheel/03.jpg",
+      "/images/products/go-go-sport-3-wheel/04.jpg",
+      "/images/products/go-go-sport-3-wheel/05.jpg",
+      "/images/products/go-go-sport-3-wheel/06.jpg",
+      "/images/products/go-go-sport-3-wheel/07.jpg",
+      "/images/products/go-go-sport-3-wheel/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/go-go-sport-3-wheel/01.jpg",
+        "alt": "Go Go Sport S73 in blue, front perspective",
+        "caption": "Go Go Sport S73 in blue, front perspective"
+      },
+      {
+        "src": "/images/products/go-go-sport-3-wheel/02.jpg",
+        "alt": "Go Go Sport S73 in red, front perspective",
+        "caption": "Go Go Sport S73 in red, front perspective"
+      },
+      {
+        "src": "/images/products/go-go-sport-3-wheel/03.jpg",
+        "alt": "Go Go Sport S73 in blue, side profile",
+        "caption": "Go Go Sport S73 in blue, side profile"
+      },
+      {
+        "src": "/images/products/go-go-sport-3-wheel/04.jpg",
+        "alt": "Go Go Sport S73 viewed from the front",
+        "caption": "Go Go Sport S73 viewed from the front"
+      },
+      {
+        "src": "/images/products/go-go-sport-3-wheel/05.jpg",
+        "alt": "Go Go Sport S73 separated for transport",
+        "caption": "Go Go Sport S73 separated for transport"
+      },
+      {
+        "src": "/images/products/go-go-sport-3-wheel/06.jpg",
+        "alt": "Go Go Sport S73 swivel-seat demonstration",
+        "caption": "Go Go Sport S73 swivel-seat demonstration"
+      },
+      {
+        "src": "/images/products/go-go-sport-3-wheel/07.jpg",
+        "alt": "Go Go Sport S73 rear wheel and frame detail",
+        "caption": "Go Go Sport S73 rear wheel and frame detail"
+      },
+      {
+        "src": "/images/products/go-go-sport-3-wheel/08.jpg",
+        "alt": "Go Go Sport S73 red side profile",
+        "caption": "Go Go Sport S73 red side profile"
+      }
+    ],
+    "rangeMiles": 12.75,
+    "maxSpeedMph": 4.7,
+    "capacityLb": 325,
+    "weightLb": 122.25,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "revo-2-4-wheel",
+    "slug": "revo-2-4-wheel",
+    "name": "Revo 2.0 4-Wheel",
+    "brand": "Pride Mobility",
+    "category": "heavy-duty",
+    "categories": [
+      "heavy-duty",
+      "4-wheel",
+      "outdoor"
+    ],
+    "price": 2549,
+    "description": "Suspension and a broad comfortable seat meet a frame that separates for transport. A versatile option for longer everyday outings.",
+    "image": "/images/products/revo-2-4-wheel/01.jpg",
+    "images": [
+      "/images/products/revo-2-4-wheel/01.jpg",
+      "/images/products/revo-2-4-wheel/02.jpg",
+      "/images/products/revo-2-4-wheel/03.jpg",
+      "/images/products/revo-2-4-wheel/04.jpg",
+      "/images/products/revo-2-4-wheel/05.jpg",
+      "/images/products/revo-2-4-wheel/06.jpg",
+      "/images/products/revo-2-4-wheel/07.jpg",
+      "/images/products/revo-2-4-wheel/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/revo-2-4-wheel/01.jpg",
+        "alt": "Revo 2.0 in blue, front perspective",
+        "caption": "Revo 2.0 in blue, front perspective"
+      },
+      {
+        "src": "/images/products/revo-2-4-wheel/02.jpg",
+        "alt": "Revo 2.0 in grey, front perspective",
+        "caption": "Revo 2.0 in grey, front perspective"
+      },
+      {
+        "src": "/images/products/revo-2-4-wheel/03.jpg",
+        "alt": "Revo 2.0 in grey, side profile",
+        "caption": "Revo 2.0 in grey, side profile"
+      },
+      {
+        "src": "/images/products/revo-2-4-wheel/04.jpg",
+        "alt": "Revo 2.0 in blue, side profile",
+        "caption": "Revo 2.0 in blue, side profile"
+      },
+      {
+        "src": "/images/products/revo-2-4-wheel/05.jpg",
+        "alt": "Revo 2.0 separated for transport",
+        "caption": "Revo 2.0 separated for transport"
+      },
+      {
+        "src": "/images/products/revo-2-4-wheel/06.jpg",
+        "alt": "Revo 2.0 control console detail",
+        "caption": "Revo 2.0 control console detail"
+      },
+      {
+        "src": "/images/products/revo-2-4-wheel/07.jpg",
+        "alt": "Revo 2.0 suspension detail",
+        "caption": "Revo 2.0 suspension detail"
+      },
+      {
+        "src": "/images/products/revo-2-4-wheel/08.jpg",
+        "alt": "Revo 2.0 front lighting detail",
+        "caption": "Revo 2.0 front lighting detail"
+      }
+    ],
+    "rangeMiles": 17.8,
+    "maxSpeedMph": 5.2,
+    "capacityLb": 400,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "victory-10-4-wheel",
+    "slug": "victory-10-4-wheel",
+    "name": "Victory 10 4-Wheel",
+    "brand": "Pride Mobility",
+    "category": "4-wheel",
+    "categories": [
+      "4-wheel",
+      "outdoor",
+      "heavy-duty"
+    ],
+    "price": 2949,
+    "description": "A full-size scooter with 10-inch tires, a sliding swivel seat and a front light, designed for comfortable daily journeys.",
+    "image": "/images/products/victory-10-4-wheel/01.jpg",
+    "images": [
+      "/images/products/victory-10-4-wheel/01.jpg",
+      "/images/products/victory-10-4-wheel/02.jpg",
+      "/images/products/victory-10-4-wheel/03.jpg",
+      "/images/products/victory-10-4-wheel/04.jpg",
+      "/images/products/victory-10-4-wheel/05.jpg",
+      "/images/products/victory-10-4-wheel/06.jpg",
+      "/images/products/victory-10-4-wheel/07.jpg",
+      "/images/products/victory-10-4-wheel/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/victory-10-4-wheel/01.jpg",
+        "alt": "Victory 10 SC710 in blue",
+        "caption": "Victory 10 SC710 in blue"
+      },
+      {
+        "src": "/images/products/victory-10-4-wheel/02.jpg",
+        "alt": "Victory 10 SC710 in red",
+        "caption": "Victory 10 SC710 in red"
+      },
+      {
+        "src": "/images/products/victory-10-4-wheel/03.jpg",
+        "alt": "Victory 10 SC710 side profile",
+        "caption": "Victory 10 SC710 side profile"
+      },
+      {
+        "src": "/images/products/victory-10-4-wheel/04.jpg",
+        "alt": "Victory 10 SC710 viewed from the left",
+        "caption": "Victory 10 SC710 viewed from the left"
+      },
+      {
+        "src": "/images/products/victory-10-4-wheel/05.jpg",
+        "alt": "Victory 10 SC710 rear lights and wheels",
+        "caption": "Victory 10 SC710 rear lights and wheels"
+      },
+      {
+        "src": "/images/products/victory-10-4-wheel/06.jpg",
+        "alt": "Victory 10 SC710 red side profile",
+        "caption": "Victory 10 SC710 red side profile"
+      },
+      {
+        "src": "/images/products/victory-10-4-wheel/07.jpg",
+        "alt": "Victory 10 SC710 with optional high-back seat, blue",
+        "caption": "Victory 10 SC710 with optional high-back seat, blue"
+      },
+      {
+        "src": "/images/products/victory-10-4-wheel/08.jpg",
+        "alt": "Victory 10 SC710 with optional high-back seat, red",
+        "caption": "Victory 10 SC710 with optional high-back seat, red"
+      }
+    ],
+    "rangeMiles": 15.5,
+    "maxSpeedMph": 5.3,
+    "capacityLb": 400,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-super-portable",
+    "slug": "go-go-super-portable",
+    "name": "Go Go Super Portable",
+    "brand": "Pride Mobility",
+    "category": "folding",
+    "categories": [
+      "folding",
+      "travel",
+      "4-wheel"
+    ],
+    "price": 3249,
+    "description": "Folds to a slim profile without removing the seat. Magnetic charging and a towing handle simplify the travel routine.",
+    "image": "/images/products/go-go-super-portable/01.jpg",
+    "images": [
+      "/images/products/go-go-super-portable/01.jpg",
+      "/images/products/go-go-super-portable/02.jpg",
+      "/images/products/go-go-super-portable/03.jpg",
+      "/images/products/go-go-super-portable/04.jpg",
+      "/images/products/go-go-super-portable/05.jpg",
+      "/images/products/go-go-super-portable/06.jpg",
+      "/images/products/go-go-super-portable/07.jpg",
+      "/images/products/go-go-super-portable/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/go-go-super-portable/01.jpg",
+        "alt": "Go Go Super Portable — Mint exterior",
+        "caption": "Mint exterior"
+      },
+      {
+        "src": "/images/products/go-go-super-portable/02.jpg",
+        "alt": "Go Go Super Portable — Folded upright",
+        "caption": "Folded upright"
+      },
+      {
+        "src": "/images/products/go-go-super-portable/03.jpg",
+        "alt": "Go Go Super Portable — Black right side",
+        "caption": "Black right side"
+      },
+      {
+        "src": "/images/products/go-go-super-portable/04.jpg",
+        "alt": "Go Go Super Portable — Black left side",
+        "caption": "Black left side"
+      },
+      {
+        "src": "/images/products/go-go-super-portable/05.jpg",
+        "alt": "Go Go Super Portable — Black rear view",
+        "caption": "Black rear view"
+      },
+      {
+        "src": "/images/products/go-go-super-portable/06.jpg",
+        "alt": "Go Go Super Portable — Black front view",
+        "caption": "Black front view"
+      },
+      {
+        "src": "/images/products/go-go-super-portable/07.jpg",
+        "alt": "Go Go Super Portable — Control panel",
+        "caption": "Control panel"
+      },
+      {
+        "src": "/images/products/go-go-super-portable/08.jpg",
+        "alt": "Go Go Super Portable — USB port detail",
+        "caption": "USB port detail"
+      }
+    ],
+    "rangeMiles": 10,
+    "maxSpeedMph": 4.5,
+    "capacityLb": 300,
+    "weightLb": 49.9,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-carbon",
+    "slug": "go-go-carbon",
+    "name": "Go Go Carbon",
+    "brand": "Pride Mobility",
+    "category": "folding",
+    "categories": [
+      "folding",
+      "travel",
+      "4-wheel"
+    ],
+    "price": 4349,
+    "description": "A folding scooter with a carbon fiber frame, telescoping tiller and NFC ignition. Built around compact storage and travel convenience.",
+    "image": "/images/products/go-go-carbon/01.jpg",
+    "images": [
+      "/images/products/go-go-carbon/01.jpg",
+      "/images/products/go-go-carbon/02.jpg",
+      "/images/products/go-go-carbon/03.jpg",
+      "/images/products/go-go-carbon/04.jpg",
+      "/images/products/go-go-carbon/05.jpg",
+      "/images/products/go-go-carbon/06.jpg",
+      "/images/products/go-go-carbon/07.jpg",
+      "/images/products/go-go-carbon/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/go-go-carbon/01.jpg",
+        "alt": "Go Go Carbon — Complete scooter",
+        "caption": "Complete scooter"
+      },
+      {
+        "src": "/images/products/go-go-carbon/02.jpg",
+        "alt": "Go Go Carbon — Left side",
+        "caption": "Left side"
+      },
+      {
+        "src": "/images/products/go-go-carbon/03.jpg",
+        "alt": "Go Go Carbon — Right side",
+        "caption": "Right side"
+      },
+      {
+        "src": "/images/products/go-go-carbon/04.jpg",
+        "alt": "Go Go Carbon — Folded side",
+        "caption": "Folded side"
+      },
+      {
+        "src": "/images/products/go-go-carbon/05.jpg",
+        "alt": "Go Go Carbon — Folded with tiller lowered",
+        "caption": "Folded with tiller lowered"
+      },
+      {
+        "src": "/images/products/go-go-carbon/06.jpg",
+        "alt": "Go Go Carbon — Top view",
+        "caption": "Top view"
+      },
+      {
+        "src": "/images/products/go-go-carbon/07.jpg",
+        "alt": "Go Go Carbon — Handlebar and controls",
+        "caption": "Handlebar and controls"
+      },
+      {
+        "src": "/images/products/go-go-carbon/08.jpg",
+        "alt": "Go Go Carbon — Rear lights",
+        "caption": "Rear lights"
+      }
+    ],
+    "rangeMiles": 10,
+    "maxSpeedMph": 3.7,
+    "capacityLb": 300,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "maxima-4-wheel",
+    "slug": "maxima-4-wheel",
+    "name": "Maxima 4-Wheel",
+    "brand": "Pride Mobility",
+    "category": "heavy-duty",
+    "categories": [
+      "heavy-duty",
+      "4-wheel",
+      "outdoor"
+    ],
+    "price": 4499,
+    "description": "A high-capacity scooter with a reclining high-back seat, side bumpers and a full lighting package for supported everyday travel.",
+    "image": "/images/products/maxima-4-wheel/01.jpg",
+    "images": [
+      "/images/products/maxima-4-wheel/01.jpg",
+      "/images/products/maxima-4-wheel/02.jpg",
+      "/images/products/maxima-4-wheel/03.jpg",
+      "/images/products/maxima-4-wheel/04.jpg",
+      "/images/products/maxima-4-wheel/05.jpg",
+      "/images/products/maxima-4-wheel/06.jpg",
+      "/images/products/maxima-4-wheel/07.jpg",
+      "/images/products/maxima-4-wheel/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/maxima-4-wheel/01.jpg",
+        "alt": "Maxima 4-Wheel — Red three-quarter view",
+        "caption": "Red three-quarter view"
+      },
+      {
+        "src": "/images/products/maxima-4-wheel/02.jpg",
+        "alt": "Maxima 4-Wheel — Red side view",
+        "caption": "Red side view"
+      },
+      {
+        "src": "/images/products/maxima-4-wheel/03.jpg",
+        "alt": "Maxima 4-Wheel — Red rear view",
+        "caption": "Red rear view"
+      },
+      {
+        "src": "/images/products/maxima-4-wheel/04.jpg",
+        "alt": "Maxima 4-Wheel — Control panel",
+        "caption": "Control panel"
+      },
+      {
+        "src": "/images/products/maxima-4-wheel/05.jpg",
+        "alt": "Maxima 4-Wheel — Charging port",
+        "caption": "Charging port"
+      },
+      {
+        "src": "/images/products/maxima-4-wheel/06.jpg",
+        "alt": "Maxima 4-Wheel — Floorboard",
+        "caption": "Floorboard"
+      },
+      {
+        "src": "/images/products/maxima-4-wheel/07.jpg",
+        "alt": "Maxima 4-Wheel — Tiller side detail",
+        "caption": "Tiller side detail"
+      },
+      {
+        "src": "/images/products/maxima-4-wheel/08.jpg",
+        "alt": "Maxima 4-Wheel — Front lighting",
+        "caption": "Front lighting"
+      }
+    ],
+    "rangeMiles": 19.5,
+    "maxSpeedMph": 5.8,
+    "capacityLb": 500,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "pursuit-2",
+    "slug": "pursuit-2",
+    "name": "Pursuit 2 · 100Ah",
+    "brand": "Pride Mobility",
+    "category": "outdoor",
+    "categories": [
+      "outdoor",
+      "heavy-duty",
+      "4-wheel"
+    ],
+    "price": 4899,
+    "description": "A substantial outdoor scooter with pneumatic tires, front and rear suspension and a high-back seat for longer excursions.",
+    "image": "/images/products/pursuit-2/01.jpg",
+    "images": [
+      "/images/products/pursuit-2/01.jpg",
+      "/images/products/pursuit-2/02.jpg",
+      "/images/products/pursuit-2/03.jpg",
+      "/images/products/pursuit-2/04.jpg",
+      "/images/products/pursuit-2/05.jpg",
+      "/images/products/pursuit-2/06.jpg",
+      "/images/products/pursuit-2/07.jpg",
+      "/images/products/pursuit-2/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/pursuit-2/01.jpg",
+        "alt": "Pursuit 2 · 100Ah — Orange exterior",
+        "caption": "Orange exterior; exterior of SC7132, battery configuration confirmed in quote"
+      },
+      {
+        "src": "/images/products/pursuit-2/02.jpg",
+        "alt": "Pursuit 2 · 100Ah — Black exterior",
+        "caption": "Black exterior; exterior of SC7132, battery configuration confirmed in quote"
+      },
+      {
+        "src": "/images/products/pursuit-2/03.jpg",
+        "alt": "Pursuit 2 · 100Ah — Black side view",
+        "caption": "Black side view; exterior of SC7132, battery configuration confirmed in quote"
+      },
+      {
+        "src": "/images/products/pursuit-2/04.jpg",
+        "alt": "Pursuit 2 · 100Ah — Control panel",
+        "caption": "Control panel; exterior of SC7132, battery configuration confirmed in quote"
+      },
+      {
+        "src": "/images/products/pursuit-2/05.jpg",
+        "alt": "Pursuit 2 · 100Ah — Seat detail",
+        "caption": "Seat detail; exterior of SC7132, battery configuration confirmed in quote"
+      },
+      {
+        "src": "/images/products/pursuit-2/06.jpg",
+        "alt": "Pursuit 2 · 100Ah — Pneumatic tire detail",
+        "caption": "Pneumatic tire detail; exterior of SC7132, battery configuration confirmed in quote"
+      },
+      {
+        "src": "/images/products/pursuit-2/07.jpg",
+        "alt": "Pursuit 2 · 100Ah — LED lighting",
+        "caption": "LED lighting; exterior of SC7132, battery configuration confirmed in quote"
+      },
+      {
+        "src": "/images/products/pursuit-2/08.jpg",
+        "alt": "Pursuit 2 · 100Ah — Rear wheel and light detail",
+        "caption": "Rear wheel and light detail; exterior of SC7132, battery configuration confirmed in quote"
+      }
+    ],
+    "rangeMiles": 40,
+    "maxSpeedMph": 9.3,
+    "capacityLb": 400,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "px4",
+    "slug": "px4",
+    "name": "PX4 Outdoor Scooter",
+    "brand": "Pride Mobility",
+    "category": "outdoor",
+    "categories": [
+      "outdoor",
+      "heavy-duty",
+      "4-wheel"
+    ],
+    "price": 6099,
+    "description": "A large outdoor scooter with suspension, memory-foam seating and NFC ignition, suited to riders seeking more space and capacity.",
+    "image": "/images/products/px4/01.jpg",
+    "images": [
+      "/images/products/px4/01.jpg",
+      "/images/products/px4/02.jpg",
+      "/images/products/px4/03.jpg",
+      "/images/products/px4/04.jpg",
+      "/images/products/px4/05.jpg",
+      "/images/products/px4/06.jpg",
+      "/images/products/px4/07.jpg",
+      "/images/products/px4/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/px4/01.jpg",
+        "alt": "PX4 Outdoor Scooter — Blue exterior",
+        "caption": "Blue exterior"
+      },
+      {
+        "src": "/images/products/px4/02.jpg",
+        "alt": "PX4 Outdoor Scooter — Blue front view",
+        "caption": "Blue front view"
+      },
+      {
+        "src": "/images/products/px4/03.jpg",
+        "alt": "PX4 Outdoor Scooter — Blue side view",
+        "caption": "Blue side view"
+      },
+      {
+        "src": "/images/products/px4/04.jpg",
+        "alt": "PX4 Outdoor Scooter — NFC ignition",
+        "caption": "NFC ignition"
+      },
+      {
+        "src": "/images/products/px4/05.jpg",
+        "alt": "PX4 Outdoor Scooter — Seat detail",
+        "caption": "Seat detail"
+      },
+      {
+        "src": "/images/products/px4/06.jpg",
+        "alt": "PX4 Outdoor Scooter — Control panel",
+        "caption": "Control panel"
+      },
+      {
+        "src": "/images/products/px4/07.jpg",
+        "alt": "PX4 Outdoor Scooter — Tire detail",
+        "caption": "Tire detail"
+      },
+      {
+        "src": "/images/products/px4/08.jpg",
+        "alt": "PX4 Outdoor Scooter — Suspension detail",
+        "caption": "Suspension detail"
+      }
+    ],
+    "rangeMiles": 23.4,
+    "maxSpeedMph": 9.2,
+    "capacityLb": 500,
+    "weightLb": 351.4,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "ev-rider-transport-af-plus",
+    "slug": "ev-rider-transport-af-plus",
+    "name": "Transport AF+ Automatic Folding Scooter",
+    "brand": "EV Rider",
+    "category": "folding",
+    "categories": [
+      "folding",
+      "travel",
+      "4-wheel"
+    ],
+    "price": 2099,
+    "description": "A remote-controlled folding scooter with a compact footprint and solid tires. Designed for storage and short trips, with a standard 10.05Ah lithium battery configuration.",
+    "image": "/images/products/ev-rider-transport-af-plus/01.jpg",
+    "images": [
+      "/images/products/ev-rider-transport-af-plus/01.jpg",
+      "/images/products/ev-rider-transport-af-plus/02.jpg",
+      "/images/products/ev-rider-transport-af-plus/03.jpg",
+      "/images/products/ev-rider-transport-af-plus/04.jpg",
+      "/images/products/ev-rider-transport-af-plus/05.jpg",
+      "/images/products/ev-rider-transport-af-plus/06.jpg",
+      "/images/products/ev-rider-transport-af-plus/07.jpg",
+      "/images/products/ev-rider-transport-af-plus/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/ev-rider-transport-af-plus/01.jpg",
+        "alt": "Transport AF+ Automatic Folding Scooter — Burgundy exterior",
+        "caption": "Burgundy exterior"
+      },
+      {
+        "src": "/images/products/ev-rider-transport-af-plus/02.jpg",
+        "alt": "Transport AF+ Automatic Folding Scooter — Blue exterior",
+        "caption": "Blue exterior"
+      },
+      {
+        "src": "/images/products/ev-rider-transport-af-plus/03.jpg",
+        "alt": "Transport AF+ Automatic Folding Scooter — Folded scooter and remote",
+        "caption": "Folded scooter and remote"
+      },
+      {
+        "src": "/images/products/ev-rider-transport-af-plus/04.jpg",
+        "alt": "Transport AF+ Automatic Folding Scooter — Rear wheel detail",
+        "caption": "Rear wheel detail"
+      },
+      {
+        "src": "/images/products/ev-rider-transport-af-plus/05.jpg",
+        "alt": "Transport AF+ Automatic Folding Scooter — Rear bumper detail",
+        "caption": "Rear bumper detail"
+      },
+      {
+        "src": "/images/products/ev-rider-transport-af-plus/06.jpg",
+        "alt": "Transport AF+ Automatic Folding Scooter — Tiller controls",
+        "caption": "Tiller controls"
+      },
+      {
+        "src": "/images/products/ev-rider-transport-af-plus/07.jpg",
+        "alt": "Transport AF+ Automatic Folding Scooter — Tiller adjustment",
+        "caption": "Tiller adjustment"
+      },
+      {
+        "src": "/images/products/ev-rider-transport-af-plus/08.jpg",
+        "alt": "Transport AF+ Automatic Folding Scooter — Seat folding detail",
+        "caption": "Seat folding detail"
+      }
+    ],
+    "rangeMiles": 8,
+    "maxSpeedMph": 3.8,
+    "capacityLb": 250,
+    "weightLb": 49,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "golden-carryon-hd",
+    "slug": "golden-carryon-hd",
+    "name": "Buzzaround CarryOn HD GB220",
+    "brand": "Golden Technologies",
+    "category": "folding",
+    "categories": [
+      "folding",
+      "travel",
+      "heavy-duty",
+      "4-wheel"
+    ],
+    "price": 2399,
+    "description": "A fold-flat travel scooter with a 400 lb capacity, adjustable tiller and removable lithium battery. Range shown is for the 12.5Ah battery alone; a spare pack can extend combined travel.",
+    "image": "/images/products/golden-carryon-hd/01.jpg",
+    "images": [
+      "/images/products/golden-carryon-hd/01.jpg",
+      "/images/products/golden-carryon-hd/02.jpg",
+      "/images/products/golden-carryon-hd/03.jpg",
+      "/images/products/golden-carryon-hd/04.jpg",
+      "/images/products/golden-carryon-hd/05.jpg",
+      "/images/products/golden-carryon-hd/06.jpg",
+      "/images/products/golden-carryon-hd/07.jpg",
+      "/images/products/golden-carryon-hd/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/golden-carryon-hd/01.jpg",
+        "alt": "Buzzaround CarryOn HD GB220 — Red exterior",
+        "caption": "Red exterior"
+      },
+      {
+        "src": "/images/products/golden-carryon-hd/02.jpg",
+        "alt": "Buzzaround CarryOn HD GB220 — Left side",
+        "caption": "Left side"
+      },
+      {
+        "src": "/images/products/golden-carryon-hd/03.jpg",
+        "alt": "Buzzaround CarryOn HD GB220 — Rear view",
+        "caption": "Rear view"
+      },
+      {
+        "src": "/images/products/golden-carryon-hd/04.jpg",
+        "alt": "Buzzaround CarryOn HD GB220 — Front view",
+        "caption": "Front view"
+      },
+      {
+        "src": "/images/products/golden-carryon-hd/05.jpg",
+        "alt": "Buzzaround CarryOn HD GB220 — Partially folded",
+        "caption": "Partially folded"
+      },
+      {
+        "src": "/images/products/golden-carryon-hd/06.jpg",
+        "alt": "Buzzaround CarryOn HD GB220 — Upright storage position",
+        "caption": "Upright storage position"
+      },
+      {
+        "src": "/images/products/golden-carryon-hd/07.jpg",
+        "alt": "Buzzaround CarryOn HD GB220 — Disassembled for transport",
+        "caption": "Disassembled for transport"
+      },
+      {
+        "src": "/images/products/golden-carryon-hd/08.jpg",
+        "alt": "Buzzaround CarryOn HD GB220 — Handlebar controls",
+        "caption": "Handlebar controls"
+      }
+    ],
+    "rangeMiles": 14.2,
+    "maxSpeedMph": 4.29,
+    "capacityLb": 400,
+    "weightLb": 77.5,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "baja-wrangler-2",
+    "slug": "baja-wrangler-2",
+    "name": "Baja Wrangler 2 · 75Ah",
+    "brand": "Baja Mobility",
+    "category": "outdoor",
+    "categories": [
+      "outdoor",
+      "heavy-duty",
+      "4-wheel"
+    ],
+    "price": 4999,
+    "description": "A substantial outdoor scooter with large pneumatic tires, front and rear suspension, and a high-back seat. Range shown uses the standard 75Ah configuration at the manufacturer’s lower test load.",
+    "image": "/images/products/baja-wrangler-2/01.jpg",
+    "images": [
+      "/images/products/baja-wrangler-2/01.jpg",
+      "/images/products/baja-wrangler-2/02.jpg",
+      "/images/products/baja-wrangler-2/03.jpg",
+      "/images/products/baja-wrangler-2/04.jpg",
+      "/images/products/baja-wrangler-2/05.jpg",
+      "/images/products/baja-wrangler-2/06.jpg",
+      "/images/products/baja-wrangler-2/07.jpg",
+      "/images/products/baja-wrangler-2/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/baja-wrangler-2/01.jpg",
+        "alt": "Baja Wrangler 2 · 75Ah — Blue exterior",
+        "caption": "Blue exterior"
+      },
+      {
+        "src": "/images/products/baja-wrangler-2/02.jpg",
+        "alt": "Baja Wrangler 2 · 75Ah — Blue front view",
+        "caption": "Blue front view"
+      },
+      {
+        "src": "/images/products/baja-wrangler-2/03.jpg",
+        "alt": "Baja Wrangler 2 · 75Ah — Orange side view",
+        "caption": "Orange side view"
+      },
+      {
+        "src": "/images/products/baja-wrangler-2/04.jpg",
+        "alt": "Baja Wrangler 2 · 75Ah — Green rear view",
+        "caption": "Green rear view"
+      },
+      {
+        "src": "/images/products/baja-wrangler-2/05.jpg",
+        "alt": "Baja Wrangler 2 · 75Ah — Console detail",
+        "caption": "Console detail"
+      },
+      {
+        "src": "/images/products/baja-wrangler-2/06.jpg",
+        "alt": "Baja Wrangler 2 · 75Ah — LED lighting detail",
+        "caption": "LED lighting detail"
+      },
+      {
+        "src": "/images/products/baja-wrangler-2/07.jpg",
+        "alt": "Baja Wrangler 2 · 75Ah — Outdoor use rear angle",
+        "caption": "Outdoor use rear angle; optional accessories may be shown"
+      },
+      {
+        "src": "/images/products/baja-wrangler-2/08.jpg",
+        "alt": "Baja Wrangler 2 · 75Ah — Outdoor use with rider",
+        "caption": "Outdoor use with rider; optional accessories may be shown"
+      }
+    ],
+    "rangeMiles": 20.2,
+    "maxSpeedMph": 11.4,
+    "capacityLb": 450,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-king-neptune",
+    "slug": "vive-king-neptune",
+    "name": "King Neptune Heavy-Duty Scooter",
+    "brand": "Vive Mobility",
+    "category": "heavy-duty",
+    "categories": [
+      "heavy-duty",
+      "4-wheel",
+      "outdoor"
+    ],
+    "price": 879,
+    "description": "A four-wheel scooter with a larger foot platform, front basket and tiller charging port. Rated for up to 400 lb; the manufacturer comparison guide lists up to 12.4 miles and 4.3 mph. Confirm the exact configuration before ordering.",
+    "image": "/images/products/vive-king-neptune/01.jpg",
+    "images": [
+      "/images/products/vive-king-neptune/01.jpg",
+      "/images/products/vive-king-neptune/02.jpg",
+      "/images/products/vive-king-neptune/03.jpg",
+      "/images/products/vive-king-neptune/04.jpg",
+      "/images/products/vive-king-neptune/05.jpg",
+      "/images/products/vive-king-neptune/06.jpg",
+      "/images/products/vive-king-neptune/07.jpg",
+      "/images/products/vive-king-neptune/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/vive-king-neptune/01.jpg",
+        "alt": "King Neptune Heavy-Duty Scooter — grey front angle",
+        "caption": "Grey front angle"
+      },
+      {
+        "src": "/images/products/vive-king-neptune/02.jpg",
+        "alt": "King Neptune Heavy-Duty Scooter — complete scooter view",
+        "caption": "Complete scooter view"
+      },
+      {
+        "src": "/images/products/vive-king-neptune/03.jpg",
+        "alt": "King Neptune Heavy-Duty Scooter — stability details",
+        "caption": "Stability details"
+      },
+      {
+        "src": "/images/products/vive-king-neptune/04.jpg",
+        "alt": "King Neptune Heavy-Duty Scooter — seat and foot platform",
+        "caption": "Seat and foot platform"
+      },
+      {
+        "src": "/images/products/vive-king-neptune/05.jpg",
+        "alt": "King Neptune Heavy-Duty Scooter — control panel details",
+        "caption": "Control panel details"
+      },
+      {
+        "src": "/images/products/vive-king-neptune/06.jpg",
+        "alt": "King Neptune Heavy-Duty Scooter — battery and charging details",
+        "caption": "Battery and charging details"
+      },
+      {
+        "src": "/images/products/vive-king-neptune/07.jpg",
+        "alt": "King Neptune Heavy-Duty Scooter — wheel and ride details",
+        "caption": "Wheel and ride details"
+      },
+      {
+        "src": "/images/products/vive-king-neptune/08.jpg",
+        "alt": "King Neptune Heavy-Duty Scooter — daily-use features",
+        "caption": "Daily-use features"
+      }
+    ],
+    "rangeMiles": 12.4,
+    "maxSpeedMph": 4.3,
+    "capacityLb": 400,
+    "weightLb": 115,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-series-a",
+    "slug": "vive-series-a",
+    "name": "Series A 4-Wheel Scooter",
+    "brand": "Vive Mobility",
+    "category": "outdoor",
+    "categories": [
+      "outdoor",
+      "4-wheel"
+    ],
+    "price": 1499,
+    "description": "A mid-size four-wheel scooter with a wraparound delta tiller, padded swivel seat and removable battery. Published limits are 298 lb, up to 15.5 miles and 5 mph. Intended for suitable firm surfaces; the manufacturer does not recommend loose gravel.",
+    "image": "/images/products/vive-series-a/01.jpg",
+    "images": [
+      "/images/products/vive-series-a/01.jpg",
+      "/images/products/vive-series-a/02.jpg",
+      "/images/products/vive-series-a/03.jpg",
+      "/images/products/vive-series-a/04.jpg",
+      "/images/products/vive-series-a/05.jpg",
+      "/images/products/vive-series-a/06.jpg",
+      "/images/products/vive-series-a/09.jpg",
+      "/images/products/vive-series-a/10.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/vive-series-a/01.jpg",
+        "alt": "Series A 4-Wheel Scooter — sapphire blue front angle",
+        "caption": "Sapphire blue front angle"
+      },
+      {
+        "src": "/images/products/vive-series-a/02.jpg",
+        "alt": "Series A 4-Wheel Scooter — battery and range details",
+        "caption": "Battery and range details"
+      },
+      {
+        "src": "/images/products/vive-series-a/03.jpg",
+        "alt": "Series A 4-Wheel Scooter — disassembly and trunk transport",
+        "caption": "Disassembly and trunk transport"
+      },
+      {
+        "src": "/images/products/vive-series-a/04.jpg",
+        "alt": "Series A 4-Wheel Scooter — control panel details",
+        "caption": "Control panel details"
+      },
+      {
+        "src": "/images/products/vive-series-a/05.jpg",
+        "alt": "Series A 4-Wheel Scooter — seat and suspension dimensions",
+        "caption": "Seat and suspension dimensions"
+      },
+      {
+        "src": "/images/products/vive-series-a/06.jpg",
+        "alt": "Series A 4-Wheel Scooter — wheels and outdoor-use illustration",
+        "caption": "Wheels and outdoor-use illustration"
+      },
+      {
+        "src": "/images/products/vive-series-a/09.jpg",
+        "alt": "Series A 4-Wheel Scooter — red color option",
+        "caption": "Red color option"
+      },
+      {
+        "src": "/images/products/vive-series-a/10.jpg",
+        "alt": "Vive Mobility Series A front basket and LED headlight detail in blue",
+        "caption": "Series A front-mounted storage basket and LED headlight."
+      }
+    ],
+    "rangeMiles": 15.5,
+    "maxSpeedMph": 5,
+    "capacityLb": 298,
+    "weightLb": 114.6,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "superhandy-passport",
+    "slug": "superhandy-passport",
+    "name": "Passport Lightweight 3-Wheel Scooter",
+    "brand": "SuperHandy",
+    "category": "folding",
+    "categories": [
+      "folding",
+      "travel",
+      "3-wheel"
+    ],
+    "price": 619,
+    "description": "A compact folding seated scooter for dry, level surfaces, with a manual brake and removable lithium battery. The GUT112 package includes two batteries: up to 6.5 miles each, or 13 miles combined after a battery swap. The manufacturer classifies this as a non-medical product.",
+    "image": "/images/products/superhandy-passport/01.jpg",
+    "images": [
+      "/images/products/superhandy-passport/01.jpg",
+      "/images/products/superhandy-passport/02.jpg",
+      "/images/products/superhandy-passport/03.jpg",
+      "/images/products/superhandy-passport/04.jpg",
+      "/images/products/superhandy-passport/05.jpg",
+      "/images/products/superhandy-passport/06.jpg",
+      "/images/products/superhandy-passport/07.jpg",
+      "/images/products/superhandy-passport/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/superhandy-passport/01.jpg",
+        "alt": "Passport Lightweight 3-Wheel Scooter — front three-quarter view",
+        "caption": "Front three-quarter view"
+      },
+      {
+        "src": "/images/products/superhandy-passport/02.jpg",
+        "alt": "Passport Lightweight 3-Wheel Scooter — front view with folded configuration",
+        "caption": "Front view with folded configuration"
+      },
+      {
+        "src": "/images/products/superhandy-passport/03.jpg",
+        "alt": "Passport Lightweight 3-Wheel Scooter — outdoor parked view",
+        "caption": "Outdoor parked view"
+      },
+      {
+        "src": "/images/products/superhandy-passport/04.jpg",
+        "alt": "Passport Lightweight 3-Wheel Scooter — braking and wheels",
+        "caption": "Braking and wheels"
+      },
+      {
+        "src": "/images/products/superhandy-passport/05.jpg",
+        "alt": "Passport Lightweight 3-Wheel Scooter — battery and motor details",
+        "caption": "Battery and motor details"
+      },
+      {
+        "src": "/images/products/superhandy-passport/06.jpg",
+        "alt": "Passport Lightweight 3-Wheel Scooter — transport configuration",
+        "caption": "Transport configuration"
+      },
+      {
+        "src": "/images/products/superhandy-passport/07.jpg",
+        "alt": "Passport Lightweight 3-Wheel Scooter — riding and controls",
+        "caption": "Riding and controls"
+      },
+      {
+        "src": "/images/products/superhandy-passport/08.jpg",
+        "alt": "Passport Lightweight 3-Wheel Scooter — seat and carrying bag details",
+        "caption": "Seat and carrying bag details"
+      }
+    ],
+    "rangeMiles": 6.5,
+    "maxSpeedMph": 3.7,
+    "capacityLb": 275,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "superhandy-passport-plus",
+    "slug": "superhandy-passport-plus",
+    "name": "Passport Plus Folding 3-Wheel Scooter",
+    "brand": "SuperHandy",
+    "category": "folding",
+    "categories": [
+      "folding",
+      "travel",
+      "3-wheel"
+    ],
+    "price": 729,
+    "description": "The GUT140 adds adjustable cushioned armrests, a larger seat and handlebar-angle adjustment. Range is up to 5.5 miles per included battery, or 11 miles combined after a battery swap. A manually braked, non-medical seated scooter for dry, level surfaces, rated for 330 lb.",
+    "image": "/images/products/superhandy-passport-plus/01.jpg",
+    "images": [
+      "/images/products/superhandy-passport-plus/01.jpg",
+      "/images/products/superhandy-passport-plus/02.jpg",
+      "/images/products/superhandy-passport-plus/03.jpg",
+      "/images/products/superhandy-passport-plus/05.jpg",
+      "/images/products/superhandy-passport-plus/06.jpg",
+      "/images/products/superhandy-passport-plus/07.jpg",
+      "/images/products/superhandy-passport-plus/08.jpg",
+      "/images/products/superhandy-passport-plus/10.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/superhandy-passport-plus/01.jpg",
+        "alt": "Passport Plus Folding 3-Wheel Scooter — front three-quarter view",
+        "caption": "Front three-quarter view"
+      },
+      {
+        "src": "/images/products/superhandy-passport-plus/02.jpg",
+        "alt": "Passport Plus Folding 3-Wheel Scooter — braking and stabilizing wheels",
+        "caption": "Braking and stabilizing wheels"
+      },
+      {
+        "src": "/images/products/superhandy-passport-plus/03.jpg",
+        "alt": "Passport Plus Folding 3-Wheel Scooter — rear riding and carrying bag details",
+        "caption": "Rear riding and carrying bag details"
+      },
+      {
+        "src": "/images/products/superhandy-passport-plus/05.jpg",
+        "alt": "Passport Plus Folding 3-Wheel Scooter — battery and motor details",
+        "caption": "Battery and motor details"
+      },
+      {
+        "src": "/images/products/superhandy-passport-plus/06.jpg",
+        "alt": "Passport Plus Folding 3-Wheel Scooter — riding and speed illustration",
+        "caption": "Riding and speed illustration"
+      },
+      {
+        "src": "/images/products/superhandy-passport-plus/07.jpg",
+        "alt": "Passport Plus Folding 3-Wheel Scooter — seat and armrest details",
+        "caption": "Seat and armrest details"
+      },
+      {
+        "src": "/images/products/superhandy-passport-plus/08.jpg",
+        "alt": "Passport Plus Folding 3-Wheel Scooter — control panel close-up",
+        "caption": "Control panel close-up"
+      },
+      {
+        "src": "/images/products/superhandy-passport-plus/10.jpg",
+        "alt": "Passport Plus Folding 3-Wheel Scooter — handlebar angle adjustment",
+        "caption": "Handlebar angle adjustment"
+      }
+    ],
+    "rangeMiles": 5.5,
+    "maxSpeedMph": 4.6,
+    "capacityLb": 330,
+    "weightLb": null,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "cycleboard-x-quad-3000",
+    "slug": "cycleboard-x-quad-3000",
+    "name": "X-Quad 3000 Four-Wheel Standing Scooter",
+    "brand": "CycleBoard",
+    "category": "standing",
+    "categories": [
+      "standing",
+      "4-wheel",
+      "outdoor"
+    ],
+    "price": 3749,
+    "description": "A four-wheel standing electric board with lean-to-steer control, independent suspension and dual rear motors. Requires balance and active leaning; intended for recreation, not seated mobility support. Range is an ideal-condition estimate. Tire size and accessories are confirmed in your quote.",
+    "image": "/images/products/cycleboard-x-quad-3000/01.webp",
+    "images": [
+      "/images/products/cycleboard-x-quad-3000/01.webp",
+      "/images/products/cycleboard-x-quad-3000/02.webp",
+      "/images/products/cycleboard-x-quad-3000/03.webp",
+      "/images/products/cycleboard-x-quad-3000/04.webp",
+      "/images/products/cycleboard-x-quad-3000/05.webp",
+      "/images/products/cycleboard-x-quad-3000/06.webp",
+      "/images/products/cycleboard-x-quad-3000/07.webp",
+      "/images/products/cycleboard-x-quad-3000/08.webp"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/01.webp",
+        "alt": "CycleBoard X-Quad 3000 — Grey, front perspective with 14-inch tires",
+        "caption": "Grey, front perspective with 14-inch tires"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/02.webp",
+        "alt": "CycleBoard X-Quad 3000 — Stealth black, front perspective with 14-inch tires",
+        "caption": "Stealth black, front perspective with 14-inch tires"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/03.webp",
+        "alt": "CycleBoard X-Quad 3000 — Handlebar controls and display (manufacturer gallery configuration)",
+        "caption": "Handlebar controls and display (manufacturer gallery configuration)"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/04.webp",
+        "alt": "CycleBoard X-Quad 3000 — Grey, front view",
+        "caption": "Grey, front view"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/05.webp",
+        "alt": "CycleBoard X-Quad 3000 — Grey, rear perspective",
+        "caption": "Grey, rear perspective"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/06.webp",
+        "alt": "CycleBoard X-Quad 3000 — Stealth black, rear perspective",
+        "caption": "Stealth black, rear perspective"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/07.webp",
+        "alt": "CycleBoard X-Quad 3000 — Folded steering column (alternate tire configuration)",
+        "caption": "Folded steering column (alternate tire configuration)"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/08.webp",
+        "alt": "CycleBoard X-Quad 3000 — Deck, rear light and suspension (alternate tire configuration)",
+        "caption": "Deck, rear light and suspension (alternate tire configuration)"
+      }
+    ],
+    "rangeMiles": 50,
+    "maxSpeedMph": 27,
+    "capacityLb": 350,
+    "weightLb": 125,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "niu-kqi-100p",
+    "slug": "niu-kqi-100p",
+    "name": "KQi 100P Standing Electric Scooter",
+    "brand": "NIU",
+    "category": "standing",
+    "categories": [
+      "standing",
+      "2-wheel"
+    ],
+    "price": 279,
+    "description": "A two-wheel standing electric kick scooter for short commutes and recreational rides, with front suspension and a folding stem. Requires standing balance and active steering; this is not a seated mobility aid. Manufacturer rider minimum age: 14 years; maximum rider weight: 265 lb. Wear a helmet and follow local riding rules. Range varies with speed, load and conditions.",
+    "image": "/images/products/niu-kqi-100p/01.jpg",
+    "images": [
+      "/images/products/niu-kqi-100p/01.jpg",
+      "/images/products/niu-kqi-100p/02.jpg",
+      "/images/products/niu-kqi-100p/03.jpg",
+      "/images/products/niu-kqi-100p/04.jpg",
+      "/images/products/niu-kqi-100p/05.jpg",
+      "/images/products/niu-kqi-100p/06.jpg",
+      "/images/products/niu-kqi-100p/07.jpg",
+      "/images/products/niu-kqi-100p/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/niu-kqi-100p/01.jpg",
+        "alt": "NIU KQi 100P — Gray scooter, left profile",
+        "caption": "Gray scooter, left profile"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/02.jpg",
+        "alt": "NIU KQi 100P — Gray scooter, front-right perspective",
+        "caption": "Gray scooter, front-right perspective"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/03.jpg",
+        "alt": "NIU KQi 100P — Black scooter, right profile",
+        "caption": "Black scooter, right profile"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/04.jpg",
+        "alt": "NIU KQi 100P — Gray scooter, front view",
+        "caption": "Gray scooter, front view"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/05.jpg",
+        "alt": "NIU KQi 100P — Black scooter, front-left perspective",
+        "caption": "Black scooter, front-left perspective"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/06.jpg",
+        "alt": "NIU KQi 100P — Black scooter, left profile",
+        "caption": "Black scooter, left profile"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/07.jpg",
+        "alt": "NIU KQi 100P — Black scooter, front-right perspective",
+        "caption": "Black scooter, front-right perspective"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/08.jpg",
+        "alt": "NIU KQi 100P — Black scooter, front view",
+        "caption": "Black scooter, front view"
+      }
+    ],
+    "rangeMiles": 18,
+    "maxSpeedMph": 17.4,
+    "capacityLb": 265,
+    "weightLb": 38.1,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "segway-e2-plus-ii",
+    "slug": "segway-e2-plus-ii",
+    "name": "E2 Plus II Standing Electric Scooter",
+    "brand": "Segway",
+    "category": "standing",
+    "categories": [
+      "standing",
+      "2-wheel"
+    ],
+    "price": 269,
+    "description": "A two-wheel standing electric kick scooter for short trips on smooth paved surfaces, with front spring suspension and a folding stem. Requires standing balance and active steering; this is not a seated mobility aid. Manufacturer rider requirements: age 14 or older, at least 4 ft 6 in tall, and no more than 198 lb. Wear a helmet and follow local riding rules. Range varies with speed, load and conditions.",
+    "image": "/images/products/segway-e2-plus-ii/04.png",
+    "images": [
+      "/images/products/segway-e2-plus-ii/04.png",
+      "/images/products/segway-e2-plus-ii/01.png",
+      "/images/products/segway-e2-plus-ii/02.png",
+      "/images/products/segway-e2-plus-ii/03.png",
+      "/images/products/segway-e2-plus-ii/05.png",
+      "/images/products/segway-e2-plus-ii/06.png",
+      "/images/products/segway-e2-plus-ii/07.png",
+      "/images/products/segway-e2-plus-ii/08.png"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/segway-e2-plus-ii/04.png",
+        "alt": "Segway E2 Plus II — Front-left perspective",
+        "caption": "Front-left perspective"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/01.png",
+        "alt": "Segway E2 Plus II — Left-side profile",
+        "caption": "Left-side profile"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/02.png",
+        "alt": "Segway E2 Plus II — Right-side profile",
+        "caption": "Right-side profile"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/03.png",
+        "alt": "Segway E2 Plus II — Rear view",
+        "caption": "Rear view"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/05.png",
+        "alt": "Segway E2 Plus II — Front-right perspective",
+        "caption": "Front-right perspective"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/06.png",
+        "alt": "Segway E2 Plus II — Rear-left perspective",
+        "caption": "Rear-left perspective"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/07.png",
+        "alt": "Segway E2 Plus II — Rear-right perspective",
+        "caption": "Rear-right perspective"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/08.png",
+        "alt": "Segway E2 Plus II — Front view",
+        "caption": "Front view"
+      }
+    ],
+    "rangeMiles": 15.5,
+    "maxSpeedMph": 15.5,
+    "capacityLb": 198,
+    "weightLb": 36.2,
+    "featured": false,
+    "availability": "confirm",
+    "active": true
+  }
+]
