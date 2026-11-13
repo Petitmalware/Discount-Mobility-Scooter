@@ -1,3 +1,4 @@
+export type ProductImage = { src: string; alt: string; caption?: string };
 export type Product = {
   id: string;
   slug: string;
@@ -10,6 +11,8 @@ export type Product = {
   description: string;
   image: string;
   images: string[];
+  imageDetails?: ProductImage[];
+  galleryExceptionNote?: string;
   rangeMiles: number;
   maxSpeedMph: number;
   capacityLb: number;

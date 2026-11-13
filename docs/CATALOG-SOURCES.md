@@ -4,7 +4,7 @@ Checked: November 12, 2026. Currency: USD.
 
 This is a researched starter catalog, not confirmed inventory. All sale prices are proposed launch prices (approximately 5–12% below the observed reference) and require merchant approval, supplier availability and margin checks before accepting payment. Reference prices for Pride products are manufacturer MSRP, not claimed previous store selling prices. Vive references are observed manufacturer sale prices. No reviews, dealership authorization, warranty entitlement, shipping promises or stock counts have been copied. Range and speed are manufacturer maxima and vary with rider, terrain, battery and conditions.
 
-Product photography was downloaded from manufacturer product pages for this private development preview. Public availability does not grant a commercial license. Merchant must secure the relevant photo/brand/reseller permissions before public commercial use; no image permissions are asserted.
+Product photography is sourced from manufacturer and exact-model specialist retailer product pages for this private development preview. The current complete gallery index is `docs/catalog-gallery-audit.json`; original reference photographs below are retained as historical source evidence. Public availability does not grant a commercial license. Merchant must secure the relevant photo/brand/reseller permissions before public commercial use; no image permissions are asserted.
 
 ## Pride Mobility Go Go Elite Traveller Gen 3
 
@@ -151,3 +151,7 @@ Product photography was downloaded from manufacturer product pages for this priv
 ## Excluded model
 
 Vive King Neptune was researched but excluded because its current manufacturer page does not publish numeric speed/range. No numeric values were invented.
+
+## November 13 gallery and catalog expansion
+
+The catalog now contains 22 models and 175 distinct selected images. All listings have 8 images except the Vive Automatic Folding Scooter, which has 7 verified usable exact-model images. See `CATALOG-GALLERIES.md` and `CATALOG-EXPANSION.md` for current photo counts, exceptions and the 7 additional models. Existing product prices and specifications were preserved.

@@ -15,3 +15,7 @@ Customer requests appear in **Quote requests**. A successful request means D1 sa
 Every mutation validates inputs on the server. Cart prices come from the server catalog, not the browser. Same-origin JSON checks and payload limits apply to writes. Inquiry submission is limited to five requests per signed-in identity (or IP for anonymous visitors) per fifteen-minute window; administrative writes are limited to 100 per signed-in administrator per window. Parameterized SQL is used throughout. Schema changes are migration-owned and are never run in an HTTP handler.
 
 Run boundary checks with `node --test tests/backend.test.mjs` after installing dependencies. Tests cover contact validation, duplicate/invalid quantities, authoritative prices, unavailable products, cross-origin writes, oversized bodies and unconfigured crypto settings.
+
+## Photo galleries
+
+Use8 distinct exact-model images whenever possible. Publishing requires at least 5. If only 5–7 genuine images can be sourced, enter a specific source-availability explanation in the gallery exception field. Duplicate links and CDN size/quality variants count once. Up to 16 distinct images are supported, and blank lines in pasted URL lists are ignored. Photo previews and the distinct-image counter help check a listing before saving.

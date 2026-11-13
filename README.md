@@ -1,6 +1,6 @@
 # Discount Mobility Scooters
 
-A responsive scooter storefront with real model photography, searchable catalog, product detail URLs, saved scooters, comparison, persistent quote requests, and protected administration.
+A responsive scooter storefront with 22 real models, 175 sourced gallery images, searchable catalog, brand filters, product detail URLs, saved scooters, comparison, persistent quote requests, and protected administration.
 
 ## Shopping and payment
 
@@ -18,7 +18,7 @@ Testing contacts: `info@homeretreatdirect.com` and `+1 509-205-9501`. Replace th
 
 ## Starter catalog
 
-Product specifications, manufacturer image URLs, and source price dates are recorded in `docs/CATALOG-SOURCES.md`. Source pricing is a benchmark, not a claim about the store's previous selling price. Discount prices are proposed launch prices, and availability defaults to confirmation required.
+The catalog contains 22 real scooter models and 175 sourced images. 21 products have 8 images each; the Vive Automatic Folding Scooter has 7 after duplicate and unrelated/promotional graphics were excluded. Product specifications, image URLs, and source price dates are recorded in `docs/CATALOG-SOURCES.md`, `docs/CATALOG-EXPANSION.md`, and `docs/catalog-gallery-audit.json`. Source pricing is a benchmark, not a claim about the store's previous selling price. Discount prices are proposed launch prices, and availability defaults to confirmation required.
 
 Before accepting paid orders, confirm supplier stock and margins, rights to use manufacturer images, business identity, product-specific returns and warranty eligibility, delivery destinations/taxes, and appropriate customer terms. This version makes no authorized-dealer, verified-review, free-delivery, or warranty promises.
 
@@ -37,3 +37,7 @@ The application uses Vinext/React, Cloudflare D1, and dispatch-owned ChatGPT aut
 - Persistent customer inquiry data is available only to authorized admins. Database hosting/access, backups, retention, and incident procedures remain operational responsibilities.
 
 Local preview identity simulation is loopback-only and excluded from production. A public customer launch needs an explicit Site audience change; the initial deployed Site is private to its owner.
+
+## Product gallery publishing rule
+
+Aim for at least 8 distinct images of the exact model. Published products require at least 5; galleries with 5–7 require a written source-availability exception. Drafts can be saved with fewer. Galleries support up to 16 images, descriptive captions, keyboard navigation, scrolling thumbnails, and full-size viewing. Common CDN size variants do not count as different photos.

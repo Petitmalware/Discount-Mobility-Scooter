@@ -9,7 +9,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const user = await requireAdmin();
-    const data = await readJson(request);
+    const data = await readJson(request, 48_000);
     await rateLimit(request, "admin-write", 100, user.userId);
     const product = validateProduct(data);
     const products = await readProducts(true);

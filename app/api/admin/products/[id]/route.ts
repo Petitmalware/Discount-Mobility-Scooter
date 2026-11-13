@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 export async function PUT(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     const user = await requireAdmin();
-    const data = await readJson(request);
+    const data = await readJson(request, 48_000);
     await rateLimit(request, "admin-write", 100, user.userId);
     const { id } = await context.params;
     const products = await readProducts(true);

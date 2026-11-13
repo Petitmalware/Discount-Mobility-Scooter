@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
+import {createHash} from "node:crypto";
 import { stripTypeScriptTypes } from "node:module";
 
 // Compile pure boundary helpers in memory so these checks do not need a Worker,
@@ -10,7 +11,9 @@ const moduleUrl = async (path, replacements = {}) => {
   for (const [from, to] of Object.entries(replacements)) source = source.replaceAll(from, to);
   return `data:text/javascript;base64,${Buffer.from(source).toString("base64")}`;
 };
-const validationUrl = await moduleUrl("../lib/server/validation.ts");
+const galleryUrl = await moduleUrl("../lib/gallery-policy.ts");
+const { uniqueGallery } = await import(galleryUrl);
+const validationUrl = await moduleUrl("../lib/server/validation.ts", { '"../gallery-policy"': JSON.stringify(galleryUrl) });
 const { validateInquiry, validateProduct, validateSettings, RequestError } = await import(validationUrl);
 const requestUrl = await moduleUrl("../lib/server/request.ts", { '"./validation"': JSON.stringify(validationUrl) });
 const { readJson } = await import(requestUrl);
@@ -62,7 +65,7 @@ test("empty wallet settings cannot enable automatic crypto readiness", () => {
   assert.equal(settings.email, "");
 });
 test("admin product validation blocks unsafe URLs and invalid discounts", () => {
-  const draft = { ...product, slug: "travel-scooter", brand: "Example", category: "Travel", categories: ["Travel"], referencePrice: 749, description: "A travel mobility scooter.", image: "/images/travel.jpg", images: ["/images/travel.jpg"], rangeMiles: 10, maxSpeedMph: 4, capacityLb: 300, weightLb: null, featured: false, sourceUrl: "https://manufacturer.example/travel", priceCheckedAt: "2026-11-12" };
+  const draft = { ...product, active: false, slug: "travel-scooter", brand: "Example", category: "Travel", categories: ["Travel"], referencePrice: 749, description: "A travel mobility scooter.", image: "/images/travel.jpg", images: ["/images/travel.jpg"], rangeMiles: 10, maxSpeedMph: 4, capacityLb: 300, weightLb: null, featured: false, sourceUrl: "https://manufacturer.example/travel", priceCheckedAt: "2026-11-12" };
   const validated = validateProduct(draft);
   assert.equal(validated.price, 649.99);
   assert.equal(validated.category, "travel");
@@ -71,4 +74,52 @@ test("admin product validation blocks unsafe URLs and invalid discounts", () => 
   for (const image of ["javascript:alert(1)", "http://example.com/travel.jpg", "/images/../private.txt", "https://name:password@example.com/photo.jpg"]) assert.throws(() => validateProduct({ ...draft, image }), RequestError);
   assert.throws(() => validateProduct({ ...draft, referencePrice: 100 }), RequestError);
   assert.throws(() => validateProduct({ ...draft, slug: "../admin" }), RequestError);
+});
+
+test("published scooters require eight images or a documented five-image exception", () => {
+  const images=Array.from({length:8},(_,i)=>`/images/scooter-${i+1}.jpg`);
+  const draft={...product,slug:"travel-scooter",brand:"Example",category:"travel",categories:["travel"],referencePrice:749,description:"A travel mobility scooter.",image:images[0],images,rangeMiles:10,maxSpeedMph:4,capacityLb:300,weightLb:null,featured:false,sourceUrl:"https://manufacturer.example/travel",priceCheckedAt:"2026-11-12"};
+  assert.equal(validateProduct(draft).images.length,8);
+  assert.equal(validateProduct({...draft,images:[...images,"   ",""]}).images.length,8);
+  assert.equal(validateProduct({...draft,images:Array.from({length:16},(_,i)=>`/images/scooter-${i+1}.jpg`).concat("")}).images.length,16);
+  assert.throws(()=>validateProduct({...draft,images:images.slice(0,4)}),error=>error.status===400);
+  assert.throws(()=>validateProduct({...draft,images:images.slice(0,5)}),/explain why/);
+  assert.equal(validateProduct({...draft,images:images.slice(0,5),galleryExceptionNote:"Manufacturer and specialist retailer sources provide only five distinct exact-model images."}).images.length,5);
+  assert.equal(validateProduct({...draft,active:false,images:[images[0]]}).images.length,1);
+  assert.throws(()=>validateProduct({...draft,images:Array.from({length:17},(_,i)=>`/images/view-${i}.jpg`)}),/up to 16/);
+  assert.equal(uniqueGallery("https://cdn.example/scooter.jpg?v=1&width=800",["https://cdn.example/scooter.jpg?width=200&v=2"]).length,1);
+  assert.throws(()=>validateProduct({...draft,image:"https://cdn.example/scooter.jpg",images:images.slice(0,3).concat("https://cdn.example/scooter.jpg?width=200")}),/at least 5/);
+});
+
+test("every catalog gallery has sourced, distinct, intact local images", async () => {
+  const catalog=JSON.parse(await fs.readFile(new URL("../lib/catalog-data.json",import.meta.url),"utf8"));
+  const audit=JSON.parse(await fs.readFile(new URL("../docs/catalog-gallery-audit.json",import.meta.url),"utf8"));
+  assert.equal(new Set(catalog.map(p=>p.id)).size,catalog.length,"Duplicate product ID");
+  assert.equal(new Set(catalog.map(p=>p.slug)).size,catalog.length,"Duplicate product URL");
+  for(const product of catalog){
+    const normalized={...product,category:product.category.toLowerCase().replaceAll(" ","-"),categories:product.categories.map(c=>c.toLowerCase().replaceAll(" ","-"))};
+    const validated=validateProduct(normalized,product.id);
+    assert.equal(validated.images.length,product.images.length,`${product.slug}: duplicate image URLs`);
+    const record=audit.products.find(p=>p.id===product.id);
+    assert.ok(record,`${product.slug}: missing image provenance`);
+    assert.equal(record.photos.length,product.images.length);
+    const hashes=new Set();
+    for(const src of product.images){
+      assert.match(src,/^\/images\/products\/[a-zA-Z0-9/_.-]+$/);
+      assert.ok(!src.includes(".."));
+      const photo=record.photos.find(p=>p.src===src);
+      assert.ok(photo,`${product.slug}: missing photo source`);
+      assert.match(photo.sourcePage,/^https:\/\//);
+      assert.match(photo.sourceUrl,/^https:\/\//);
+      const bytes=await fs.readFile(new URL("../public"+src,import.meta.url));
+      assert.ok(bytes.length>=1000,`${src}: empty or tiny photo`);
+      assert.ok((bytes[0]===255&&bytes[1]===216)||bytes.subarray(1,4).toString()==="PNG"||(bytes.subarray(0,4).toString()==="RIFF"&&bytes.subarray(8,12).toString()==="WEBP"),`${src}: unsupported or corrupt image signature`);
+      const hash=createHash("sha256").update(bytes).digest("hex");
+      assert.equal(hash,photo.sha256,`${src}: photo bytes changed after validation`);
+      assert.ok(!hashes.has(hash),`${product.slug}: duplicate photo file`);
+      hashes.add(hash);
+      assert.ok(photo.width>=300&&photo.height>=300,`${src}: inadequate source dimensions`);
+      assert.ok(product.imageDetails?.some(d=>d.src===src&&d.alt),`${src}: missing accessible photo description`);
+    }
+  }
 });

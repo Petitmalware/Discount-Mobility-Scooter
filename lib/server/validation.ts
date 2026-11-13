@@ -1,4 +1,5 @@
 import type { AdminStoreSettings, Currency, InquiryInput, Product } from "../types";
+import { imageIdentity, uniqueGallery, MIN_PRODUCT_IMAGES, TARGET_PRODUCT_IMAGES, MAX_PRODUCT_IMAGES } from "../gallery-policy";
 
 export class RequestError extends Error {
   status: number;
@@ -74,14 +75,25 @@ export function validateProduct(value: unknown, existingId?: string): Product {
   const categories = [...new Set([mainCategory, ...data.categories.map(category)])];
   if (!["confirm", "available", "unavailable"].includes(String(data.availability))) throw new RequestError("Choose a valid availability status.");
   const image = url(data.image, "Product image", true);
-  const images = Array.isArray(data.images) ? data.images.filter(v => typeof v === "string" && v.trim()).slice(0, 8).map(v => url(v, "Product image", true)) : [image];
+  if (data.images !== undefined && !Array.isArray(data.images)) throw new RequestError("Provide a list of gallery image URLs.");
+  const images = uniqueGallery(image, Array.isArray(data.images) ? data.images.filter(v=>typeof v!=="string"||v.trim()!=="").map(v => url(v, "Product image", true)) : []);
+  if (images.length > MAX_PRODUCT_IMAGES) throw new RequestError(`A gallery can contain up to ${MAX_PRODUCT_IMAGES} distinct images, including its main image.`);
+  const galleryExceptionNote = optional(data.galleryExceptionNote, "Gallery availability note", 600);
+  if (data.active === true && images.length < MIN_PRODUCT_IMAGES) throw new RequestError(`Published scooters need at least ${MIN_PRODUCT_IMAGES} distinct exact-model images. Aim for ${TARGET_PRODUCT_IMAGES}.`);
+  if (data.active === true && images.length < TARGET_PRODUCT_IMAGES && galleryExceptionNote.length < 20) throw new RequestError(`Add ${TARGET_PRODUCT_IMAGES} exact-model images, or explain why only ${MIN_PRODUCT_IMAGES}–${TARGET_PRODUCT_IMAGES-1} are available.`);
+  if (data.imageDetails !== undefined && (!Array.isArray(data.imageDetails) || data.imageDetails.length > MAX_PRODUCT_IMAGES)) throw new RequestError("Check the gallery descriptions.");
+  const galleryKeys = new Set(images.map(imageIdentity));
+  const imageDetails = Array.isArray(data.imageDetails) ? data.imageDetails.map(value=>{
+    const row=object(value);
+    return {src:url(row.src,"Product image",true),alt:text(row.alt,"Image description",1,250),caption:optional(row.caption,"Image caption",500)};
+  }).filter(row=>galleryKeys.has(imageIdentity(row.src))) : [];
   const checked = text(data.priceCheckedAt, "Price checked date", 10, 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(checked) || Number.isNaN(Date.parse(checked))) throw new RequestError("Use a price checked date in YYYY-MM-DD format.");
   return {
     id: existingId ?? `custom-${crypto.randomUUID()}`, slug,
     name: text(data.name, "Name", 2, 160), brand: text(data.brand, "Brand", 2, 80),
     category: mainCategory, categories, price, referencePrice,
-    description: text(data.description, "Description", 10, 4000), image, images: [...new Set([image, ...images])].slice(0, 8),
+    description: text(data.description, "Description", 10, 4000), image, images, imageDetails, galleryExceptionNote,
     rangeMiles: number(data.rangeMiles, "Range", 0.1, 100), maxSpeedMph: number(data.maxSpeedMph, "Speed", 0.1, 25),
     capacityLb: number(data.capacityLb, "Weight capacity", 50, 1000),
     weightLb: data.weightLb === null || data.weightLb === "" ? null : number(data.weightLb, "Product weight", 1, 500),
