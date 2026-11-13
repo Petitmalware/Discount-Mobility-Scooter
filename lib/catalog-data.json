@@ -329,7 +329,8 @@
       "/images/products/vive-auto-folding/04.jpg",
       "/images/products/vive-auto-folding/05.jpg",
       "/images/products/vive-auto-folding/06.jpg",
-      "/images/products/vive-auto-folding/07.jpg"
+      "/images/products/vive-auto-folding/07.jpg",
+      "/images/products/vive-auto-folding/08.jpg"
     ],
     "rangeMiles": 11.3,
     "maxSpeedMph": 3.73,
@@ -375,9 +376,14 @@
         "src": "/images/products/vive-auto-folding/07.jpg",
         "alt": "Automatic Folding Scooter — control panel details",
         "caption": "Control panel details"
+      },
+      {
+        "src": "/images/products/vive-auto-folding/08.jpg",
+        "alt": "Automatic Folding Scooter — side profile",
+        "caption": "Side profile"
       }
     ],
-    "galleryExceptionNote": "Seven distinct photographs of this exact model were verified across manufacturer and retailer galleries. Repeated images and non-product promotional graphics were excluded."
+    "galleryExceptionNote": ""
   },
   {
     "id": "vive-neptune",
@@ -1701,5 +1707,235 @@
       }
     ],
     "galleryExceptionNote": ""
+  },
+  {
+    "id": "cycleboard-x-quad-3000",
+    "slug": "cycleboard-x-quad-3000",
+    "name": "X-Quad 3000 Four-Wheel Standing Scooter",
+    "brand": "CycleBoard",
+    "category": "standing",
+    "categories": [
+      "standing",
+      "4-wheel",
+      "outdoor"
+    ],
+    "price": 3749,
+    "referencePrice": 3995,
+    "description": "A four-wheel standing electric board with lean-to-steer control, independent suspension and dual rear motors. Requires balance and active leaning; intended for recreation, not seated mobility support. Range is an ideal-condition estimate. Tire size and accessories are confirmed in your quote.",
+    "image": "/images/products/cycleboard-x-quad-3000/01.webp",
+    "images": [
+      "/images/products/cycleboard-x-quad-3000/01.webp",
+      "/images/products/cycleboard-x-quad-3000/02.webp",
+      "/images/products/cycleboard-x-quad-3000/03.webp",
+      "/images/products/cycleboard-x-quad-3000/04.webp",
+      "/images/products/cycleboard-x-quad-3000/05.webp",
+      "/images/products/cycleboard-x-quad-3000/06.webp",
+      "/images/products/cycleboard-x-quad-3000/07.webp",
+      "/images/products/cycleboard-x-quad-3000/08.webp"
+    ],
+    "rangeMiles": 50,
+    "maxSpeedMph": 27,
+    "capacityLb": 350,
+    "weightLb": 125,
+    "featured": false,
+    "sourceUrl": "https://www.cycleboard.com/products/x-quad",
+    "priceCheckedAt": "2026-11-13",
+    "availability": "confirm",
+    "active": true,
+    "imageDetails": [
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/01.webp",
+        "alt": "CycleBoard X-Quad 3000 — Grey, front perspective with 14-inch tires",
+        "caption": "Grey, front perspective with 14-inch tires"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/02.webp",
+        "alt": "CycleBoard X-Quad 3000 — Stealth black, front perspective with 14-inch tires",
+        "caption": "Stealth black, front perspective with 14-inch tires"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/03.webp",
+        "alt": "CycleBoard X-Quad 3000 — Handlebar controls and display (manufacturer gallery configuration)",
+        "caption": "Handlebar controls and display (manufacturer gallery configuration)"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/04.webp",
+        "alt": "CycleBoard X-Quad 3000 — Grey, front view",
+        "caption": "Grey, front view"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/05.webp",
+        "alt": "CycleBoard X-Quad 3000 — Grey, rear perspective",
+        "caption": "Grey, rear perspective"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/06.webp",
+        "alt": "CycleBoard X-Quad 3000 — Stealth black, rear perspective",
+        "caption": "Stealth black, rear perspective"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/07.webp",
+        "alt": "CycleBoard X-Quad 3000 — Folded steering column (alternate tire configuration)",
+        "caption": "Folded steering column (alternate tire configuration)"
+      },
+      {
+        "src": "/images/products/cycleboard-x-quad-3000/08.webp",
+        "alt": "CycleBoard X-Quad 3000 — Deck, rear light and suspension (alternate tire configuration)",
+        "caption": "Deck, rear light and suspension (alternate tire configuration)"
+      }
+    ],
+    "galleryExceptionNote": ""
+  },
+  {
+    "id": "niu-kqi-100p",
+    "slug": "niu-kqi-100p",
+    "name": "KQi 100P Standing Electric Scooter",
+    "brand": "NIU",
+    "category": "standing",
+    "categories": [
+      "standing",
+      "2-wheel"
+    ],
+    "price": 279,
+    "referencePrice": 299,
+    "description": "A two-wheel standing electric kick scooter for short commutes and recreational rides, with front suspension and a folding stem. Requires standing balance and active steering; this is not a seated mobility aid. Manufacturer rider minimum age: 14 years; maximum rider weight: 265 lb. Wear a helmet and follow local riding rules. Range varies with speed, load and conditions.",
+    "image": "/images/products/niu-kqi-100p/01.jpg",
+    "images": [
+      "/images/products/niu-kqi-100p/01.jpg",
+      "/images/products/niu-kqi-100p/02.jpg",
+      "/images/products/niu-kqi-100p/03.jpg",
+      "/images/products/niu-kqi-100p/04.jpg",
+      "/images/products/niu-kqi-100p/05.jpg",
+      "/images/products/niu-kqi-100p/06.jpg",
+      "/images/products/niu-kqi-100p/07.jpg",
+      "/images/products/niu-kqi-100p/08.jpg"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/niu-kqi-100p/01.jpg",
+        "alt": "NIU KQi 100P — Gray scooter, left profile",
+        "caption": "Gray scooter, left profile"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/02.jpg",
+        "alt": "NIU KQi 100P — Gray scooter, front-right perspective",
+        "caption": "Gray scooter, front-right perspective"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/03.jpg",
+        "alt": "NIU KQi 100P — Black scooter, right profile",
+        "caption": "Black scooter, right profile"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/04.jpg",
+        "alt": "NIU KQi 100P — Gray scooter, front view",
+        "caption": "Gray scooter, front view"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/05.jpg",
+        "alt": "NIU KQi 100P — Black scooter, front-left perspective",
+        "caption": "Black scooter, front-left perspective"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/06.jpg",
+        "alt": "NIU KQi 100P — Black scooter, left profile",
+        "caption": "Black scooter, left profile"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/07.jpg",
+        "alt": "NIU KQi 100P — Black scooter, front-right perspective",
+        "caption": "Black scooter, front-right perspective"
+      },
+      {
+        "src": "/images/products/niu-kqi-100p/08.jpg",
+        "alt": "NIU KQi 100P — Black scooter, front view",
+        "caption": "Black scooter, front view"
+      }
+    ],
+    "rangeMiles": 18,
+    "maxSpeedMph": 17.4,
+    "capacityLb": 265,
+    "weightLb": 38.1,
+    "featured": false,
+    "sourceUrl": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+    "priceCheckedAt": "2026-11-13",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "segway-e2-plus-ii",
+    "slug": "segway-e2-plus-ii",
+    "name": "E2 Plus II Standing Electric Scooter",
+    "brand": "Segway",
+    "category": "standing",
+    "categories": [
+      "standing",
+      "2-wheel"
+    ],
+    "price": 269,
+    "referencePrice": 285.98,
+    "description": "A two-wheel standing electric kick scooter for short trips on smooth paved surfaces, with front spring suspension and a folding stem. Requires standing balance and active steering; this is not a seated mobility aid. Manufacturer rider requirements: age 14 or older, at least 4 ft 6 in tall, and no more than 198 lb. Wear a helmet and follow local riding rules. Range varies with speed, load and conditions.",
+    "image": "/images/products/segway-e2-plus-ii/04.png",
+    "images": [
+      "/images/products/segway-e2-plus-ii/04.png",
+      "/images/products/segway-e2-plus-ii/01.png",
+      "/images/products/segway-e2-plus-ii/02.png",
+      "/images/products/segway-e2-plus-ii/03.png",
+      "/images/products/segway-e2-plus-ii/05.png",
+      "/images/products/segway-e2-plus-ii/06.png",
+      "/images/products/segway-e2-plus-ii/07.png",
+      "/images/products/segway-e2-plus-ii/08.png"
+    ],
+    "imageDetails": [
+      {
+        "src": "/images/products/segway-e2-plus-ii/04.png",
+        "alt": "Segway E2 Plus II — Front-left perspective",
+        "caption": "Front-left perspective"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/01.png",
+        "alt": "Segway E2 Plus II — Left-side profile",
+        "caption": "Left-side profile"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/02.png",
+        "alt": "Segway E2 Plus II — Right-side profile",
+        "caption": "Right-side profile"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/03.png",
+        "alt": "Segway E2 Plus II — Rear view",
+        "caption": "Rear view"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/05.png",
+        "alt": "Segway E2 Plus II — Front-right perspective",
+        "caption": "Front-right perspective"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/06.png",
+        "alt": "Segway E2 Plus II — Rear-left perspective",
+        "caption": "Rear-left perspective"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/07.png",
+        "alt": "Segway E2 Plus II — Rear-right perspective",
+        "caption": "Rear-right perspective"
+      },
+      {
+        "src": "/images/products/segway-e2-plus-ii/08.png",
+        "alt": "Segway E2 Plus II — Front view",
+        "caption": "Front view"
+      }
+    ],
+    "rangeMiles": 15.5,
+    "maxSpeedMph": 15.5,
+    "capacityLb": 198,
+    "weightLb": 36.2,
+    "featured": false,
+    "sourceUrl": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+    "priceCheckedAt": "2026-11-13",
+    "availability": "confirm",
+    "active": true
   }
 ]

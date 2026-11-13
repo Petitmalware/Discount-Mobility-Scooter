@@ -25,6 +25,7 @@ export type Product = {
 };
 
 export type Currency = "USD" | "CAD" | "GBP" | "EUR" | "AUD";
+export type PublicProduct = Omit<Product, "referencePrice" | "sourceUrl" | "priceCheckedAt" | "galleryExceptionNote">;
 export type StoreSettings = {
   email: string;
   phone: string;

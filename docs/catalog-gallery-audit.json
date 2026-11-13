@@ -1687,8 +1687,8 @@
       "id": "vive-auto-folding",
       "name": "Automatic Folding Scooter",
       "brand": "Vive Mobility",
-      "images": 7,
-      "exception": "Seven distinct photographs of this exact model were verified across manufacturer and retailer galleries. Repeated images and non-product promotional graphics were excluded.",
+      "images": 8,
+      "exception": "",
       "photos": [
         {
           "src": "/images/products/vive-auto-folding.jpg",
@@ -1773,6 +1773,19 @@
           "bytes": 72365,
           "sha256": "9f988a3edbc59ea1d985a027255da9f1abb2d4d143e2dc31d8bacc4dec2bced7",
           "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/vive-auto-folding/08.jpg",
+          "sourcePage": "https://www.rehabmart.com/pdfs/folding_mobility_scooter_-_product_sheet.pdf",
+          "sourceUrl": "https://www.rehabmart.com/pdfs/folding_mobility_scooter_-_product_sheet.pdf#page=1",
+          "alt": "Automatic Folding Scooter — side profile",
+          "caption": "Side profile",
+          "width": 530,
+          "height": 526,
+          "bytes": 47311,
+          "sha256": "bc00c72086eac498b638718efca1e92931df2cfa15547ed9bba737005092e049",
+          "optionalConfiguration": false,
+          "extractionNote": "Exact-model side-profile photograph extracted from the included-items panel on page1 of the Vive MOB1058 manufacturer sell sheet, revision SR23-11R2. PDF rendered at3600px long edge and image-region extracted at x1470,y1990,width530,height526. This is a distinct side-profile photograph, not a duplicate crop of any existing gallery photograph."
         }
       ]
     },
@@ -2297,6 +2310,321 @@
           "height": 474,
           "bytes": 15714,
           "sha256": "e1df17b51d3af8f5a2c62663a107ce8546d4f58d57414bd89f6b07f1c44f36db",
+          "optionalConfiguration": false
+        }
+      ]
+    },
+    {
+      "id": "cycleboard-x-quad-3000",
+      "name": "X-Quad 3000 Four-Wheel Standing Scooter",
+      "brand": "CycleBoard",
+      "images": 8,
+      "exception": "",
+      "photos": [
+        {
+          "src": "/images/products/cycleboard-x-quad-3000/01.webp",
+          "sourcePage": "https://www.cycleboard.com/products/x-quad",
+          "sourceUrl": "https://images.prismic.io/cycleboards/aJGao6Tt2nPbZ1g9_CycleBoard-X-Quad-3000-Grey-14x5-Tire-with-fenders-Hero.png?auto=format%2Ccompress&fm=webp&w=1200&q=85",
+          "alt": "CycleBoard X-Quad 3000 — Grey, front perspective with 14-inch tires",
+          "caption": "Grey, front perspective with 14-inch tires",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 119180,
+          "sha256": "af66aa165c6c941189b095837c5ace5f513f70ba8fb45494f77411d8ff91dd83",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/cycleboard-x-quad-3000/02.webp",
+          "sourcePage": "https://www.cycleboard.com/products/x-quad",
+          "sourceUrl": "https://images.prismic.io/cycleboards/aJGaqqTt2nPbZ1g-_CycleBoard-X-Quad-3000-Stealth-14x5-Tire-with-fenders-Hero.png?auto=format%2Ccompress&fm=webp&w=1200&q=85",
+          "alt": "CycleBoard X-Quad 3000 — Stealth black, front perspective with 14-inch tires",
+          "caption": "Stealth black, front perspective with 14-inch tires",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 139596,
+          "sha256": "acb1686cead743a5d0869de085937f0e0113ff68be0a0f9466b45a3793606b11",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/cycleboard-x-quad-3000/03.webp",
+          "sourcePage": "https://www.cycleboard.com/products/x-quad",
+          "sourceUrl": "https://images.prismic.io/cycleboards/7d5127dc-08e9-4788-9a6d-aa13844a58a6_Legion-Electric-Motorsports-XQ-3000-lcd-display.png?auto=format%2Ccompress&fm=webp&w=1200&q=85",
+          "alt": "CycleBoard X-Quad 3000 — Handlebar controls and display (manufacturer gallery configuration)",
+          "caption": "Handlebar controls and display (manufacturer gallery configuration)",
+          "width": 1200,
+          "height": 675,
+          "bytes": 60280,
+          "sha256": "6d8c4ee742e481aaa02710b325a7a1e1dda898f4cdb2aa0ad087c2be68a3519d",
+          "optionalConfiguration": true
+        },
+        {
+          "src": "/images/products/cycleboard-x-quad-3000/04.webp",
+          "sourcePage": "https://www.cycleboard.com/products/x-quad",
+          "sourceUrl": "https://images.prismic.io/cycleboards/aIhhF1GsbswqTYIc_CycleBoard-X-Quad-3000-Grey-14-5-Tire-with-fenders-Front.png?auto=format%2Ccompress&fm=webp&w=1200&q=85",
+          "alt": "CycleBoard X-Quad 3000 — Grey, front view",
+          "caption": "Grey, front view",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 96964,
+          "sha256": "98cabb48eebad76714f46dfea0d8d61936268d8f9d165a3e2754756a164ce4dd",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/cycleboard-x-quad-3000/05.webp",
+          "sourcePage": "https://www.cycleboard.com/products/x-quad",
+          "sourceUrl": "https://images.prismic.io/cycleboards/aIhhFlGsbswqTYIa_CycleBoard-X-Quad-3000-Gery-14-5-Tire-with-fenders-BackSide.png?auto=format%2Ccompress&fm=webp&w=1200&q=85",
+          "alt": "CycleBoard X-Quad 3000 — Grey, rear perspective",
+          "caption": "Grey, rear perspective",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 105354,
+          "sha256": "2eb2fb73263de4c98e5a270664185c13d5cda2b192d7597052002acac5e6e646",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/cycleboard-x-quad-3000/06.webp",
+          "sourcePage": "https://www.cycleboard.com/products/x-quad",
+          "sourceUrl": "https://images.prismic.io/cycleboards/aIhhHFGsbswqTYIh_CycleBoard-X-Quad-3000-Stealth-14-5-Tire-with-fenders-BackSide.png?auto=format%2Ccompress&fm=webp&w=1200&q=85",
+          "alt": "CycleBoard X-Quad 3000 — Stealth black, rear perspective",
+          "caption": "Stealth black, rear perspective",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 110494,
+          "sha256": "26b25c102c18dbe01daf3557290b646826c1f7fd3511d67f2f4c1797e07cbbab",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/cycleboard-x-quad-3000/07.webp",
+          "sourcePage": "https://www.cycleboard.com/products/x-quad",
+          "sourceUrl": "https://images.prismic.io/cycleboards/Zr7hgUaF0TcGI_AW_CycleBoard-X-Quad-3000-Folded.png?auto=format%2Ccompress&fm=webp&w=1200&q=85",
+          "alt": "CycleBoard X-Quad 3000 — Folded steering column (alternate tire configuration)",
+          "caption": "Folded steering column (alternate tire configuration)",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 156554,
+          "sha256": "e56197e7b9b925355f6686b44bebd348a347a66ca83122d72b415f82cdb22b30",
+          "optionalConfiguration": true
+        },
+        {
+          "src": "/images/products/cycleboard-x-quad-3000/08.webp",
+          "sourcePage": "https://www.cycleboard.com/products/x-quad",
+          "sourceUrl": "https://images.prismic.io/cycleboards/cd0602ae-ca2f-44e2-b150-cc6c0266b9d4_Legion-Electric-Motorsports-XQ-3000-Left-close.png?auto=format%2Ccompress&fm=webp&w=1200&q=85",
+          "alt": "CycleBoard X-Quad 3000 — Deck, rear light and suspension (alternate tire configuration)",
+          "caption": "Deck, rear light and suspension (alternate tire configuration)",
+          "width": 1200,
+          "height": 675,
+          "bytes": 130508,
+          "sha256": "26a07be44ecf2ca4c8664a632376de974705987ccc2fd3ba2b9ec0000455aee9",
+          "optionalConfiguration": true
+        }
+      ]
+    },
+    {
+      "id": "niu-kqi-100p",
+      "name": "KQi 100P Standing Electric Scooter",
+      "brand": "NIU",
+      "images": 8,
+      "exception": "",
+      "photos": [
+        {
+          "src": "/images/products/niu-kqi-100p/01.jpg",
+          "sourcePage": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+          "sourceUrl": "https://shop.niu.com/cdn/shop/files/KQi-100P_US_Basic-Render_Gray_Left-90.jpg?v=1776064693&width=1000",
+          "alt": "NIU KQi 100P — Gray scooter, left profile",
+          "caption": "Gray scooter, left profile",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 43220,
+          "sha256": "05c0f69be68b838e2aee789163b428f0e7af9c81f00ad0babdf1b2eaa4873140",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/niu-kqi-100p/02.jpg",
+          "sourcePage": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+          "sourceUrl": "https://shop.niu.com/cdn/shop/files/KQi-100P_US_Basic-Render_Gray_Right-45.jpg?v=1776064693&width=1000",
+          "alt": "NIU KQi 100P — Gray scooter, front-right perspective",
+          "caption": "Gray scooter, front-right perspective",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 40052,
+          "sha256": "0b998da46bbeffe83dc89ec500b648cbfb118519e6778278ca08f80166cd19f4",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/niu-kqi-100p/03.jpg",
+          "sourcePage": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+          "sourceUrl": "https://shop.niu.com/cdn/shop/files/KQi-100P_US_Basic-Render_Black_Right-90.jpg?v=1776064693&width=1000",
+          "alt": "NIU KQi 100P — Black scooter, right profile",
+          "caption": "Black scooter, right profile",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 43355,
+          "sha256": "9fb867dc95c9c9764a74aee06b399d27905ce6e43146e096d964bc5623e65dfd",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/niu-kqi-100p/04.jpg",
+          "sourcePage": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+          "sourceUrl": "https://shop.niu.com/cdn/shop/files/KQi-100P_US_Basic-Render_Gray_Front.jpg?v=1776064693&width=1000",
+          "alt": "NIU KQi 100P — Gray scooter, front view",
+          "caption": "Gray scooter, front view",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 25745,
+          "sha256": "01f57dfd1085a5745ff0581bfe8bdec2b259f355cb05b4cc8aef309238293067",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/niu-kqi-100p/05.jpg",
+          "sourcePage": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+          "sourceUrl": "https://shop.niu.com/cdn/shop/files/KQi-100P_US_Basic-Render_Black_Left-45_6e4ca58d-1578-4dac-8340-cb9b7bfd9c6e.jpg?v=1776064693&width=1000",
+          "alt": "NIU KQi 100P — Black scooter, front-left perspective",
+          "caption": "Black scooter, front-left perspective",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 39527,
+          "sha256": "0821ca28ab46815754d804eb959f68fd026e77cea2e13c4128218f00fbc859c2",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/niu-kqi-100p/06.jpg",
+          "sourcePage": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+          "sourceUrl": "https://shop.niu.com/cdn/shop/files/KQi-100P_US_Basic-Render_Black_Left-90_9e19ae92-8465-486f-9007-893919dadb5b.jpg?v=1776064693&width=1000",
+          "alt": "NIU KQi 100P — Black scooter, left profile",
+          "caption": "Black scooter, left profile",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 43541,
+          "sha256": "06aa12ea0e01b257ea1e8ffcbd8881d6707f67be6cb23ca77caf790cbcac5a37",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/niu-kqi-100p/07.jpg",
+          "sourcePage": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+          "sourceUrl": "https://shop.niu.com/cdn/shop/files/KQi-100P_US_Basic-Render_Black_Right-45_cd5a3e22-4e5e-4d4f-ac3b-e0db6a9224b5.jpg?v=1776064693&width=1000",
+          "alt": "NIU KQi 100P — Black scooter, front-right perspective",
+          "caption": "Black scooter, front-right perspective",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 40091,
+          "sha256": "b2afd84b7f1da9417a30137b94bccdd09c7a727f6631c4cdd24214905edd73ae",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/niu-kqi-100p/08.jpg",
+          "sourcePage": "https://shop.niu.com/products/niu-kqi-100p-electric-scooter",
+          "sourceUrl": "https://shop.niu.com/cdn/shop/files/KQi-100P_US_Basic-Render_Black_Front_01dd3100-8bec-45f4-bb99-eeb426ad285c.jpg?v=1776064693&width=1000",
+          "alt": "NIU KQi 100P — Black scooter, front view",
+          "caption": "Black scooter, front view",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 25686,
+          "sha256": "23ee61f7667e42410ed9d37eed41f6eaed422d12e0e714aceb93745f718d2f9d",
+          "optionalConfiguration": false
+        }
+      ]
+    },
+    {
+      "id": "segway-e2-plus-ii",
+      "name": "E2 Plus II Standing Electric Scooter",
+      "brand": "Segway",
+      "images": 8,
+      "exception": "",
+      "photos": [
+        {
+          "src": "/images/products/segway-e2-plus-ii/04.png",
+          "sourcePage": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+          "sourceUrl": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/e/2/e2plusii0005_1_1_.png",
+          "alt": "Segway E2 Plus II — Front-left perspective",
+          "caption": "Front-left perspective",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 75992,
+          "sha256": "f44d129832dfb305a15d3d14d94c3d9343de13446f67c889a1dbef68850435b3",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/segway-e2-plus-ii/01.png",
+          "sourcePage": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+          "sourceUrl": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/e/2/e2plusii0001_1_1_.png",
+          "alt": "Segway E2 Plus II — Left-side profile",
+          "caption": "Left-side profile",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 69730,
+          "sha256": "2f0a58000214e6330434f37a8b90d6f297b1aa6065a0531d81571eaf6357f087",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/segway-e2-plus-ii/02.png",
+          "sourcePage": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+          "sourceUrl": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/e/2/e2plusii0002_1_1_.png",
+          "alt": "Segway E2 Plus II — Right-side profile",
+          "caption": "Right-side profile",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 69355,
+          "sha256": "a8f6531f9903108f8978b47c571a910959bd19dcc9dab68e1c2ded5c23f9498a",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/segway-e2-plus-ii/03.png",
+          "sourcePage": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+          "sourceUrl": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/e/2/e2plusii0004_1_1_.png",
+          "alt": "Segway E2 Plus II — Rear view",
+          "caption": "Rear view",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 46702,
+          "sha256": "434a73b7296e1b17e90619ba33c48f100325b189e91cfb1b51c2ca01dcc070e6",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/segway-e2-plus-ii/05.png",
+          "sourcePage": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+          "sourceUrl": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/e/2/e2plusii0006_1_1_.png?w=1000&fit=max",
+          "alt": "Segway E2 Plus II — Front-right perspective",
+          "caption": "Front-right perspective",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 57178,
+          "sha256": "7a04b64b13f66edaa4263f2fe13e89b9e6d3a08a60bdf9ef79c89ff50f0c2cc8",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/segway-e2-plus-ii/06.png",
+          "sourcePage": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+          "sourceUrl": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/e/2/e2plusii0007_1_1_.png?w=1000&fit=max",
+          "alt": "Segway E2 Plus II — Rear-left perspective",
+          "caption": "Rear-left perspective",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 57422,
+          "sha256": "9e7f7250a60d79edf7cf8c140f012671ebcfcf5e5261fe5d0ecc6ad1169d1ba2",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/segway-e2-plus-ii/07.png",
+          "sourcePage": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+          "sourceUrl": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/e/2/e2plusii0008_1_1_.png",
+          "alt": "Segway E2 Plus II — Rear-right perspective",
+          "caption": "Rear-right perspective",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 77131,
+          "sha256": "c64e545ff0233e134eef5eae3c17208ea88ed0b3cece4f07bd5ad85616710eef",
+          "optionalConfiguration": false
+        },
+        {
+          "src": "/images/products/segway-e2-plus-ii/08.png",
+          "sourcePage": "https://store.segway.com/ninebot-kickscooter-e2-plus-ii",
+          "sourceUrl": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/e/2/e2plusii0009_1_1_.png?w=1000&fit=max",
+          "alt": "Segway E2 Plus II — Front view",
+          "caption": "Front view",
+          "width": 1000,
+          "height": 1000,
+          "bytes": 37751,
+          "sha256": "ccd386eacf76fae3cd940e9d37e8d41f6283a6d9a9f9eb0d6a0b013811cf65be",
           "optionalConfiguration": false
         }
       ]

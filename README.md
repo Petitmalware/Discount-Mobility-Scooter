@@ -1,6 +1,6 @@
 # Discount Mobility Scooters
 
-A responsive scooter storefront with 22 real models, 175 sourced gallery images, searchable catalog, brand filters, product detail URLs, saved scooters, comparison, persistent quote requests, and protected administration.
+A responsive scooter storefront with 25 real models, 200 sourced gallery images, searchable catalog, brand filters, product detail URLs, saved scooters, comparison, persistent quote requests, and protected administration.
 
 ## Shopping and payment
 
@@ -18,7 +18,7 @@ Testing contacts: `info@homeretreatdirect.com` and `+1 509-205-9501`. Replace th
 
 ## Starter catalog
 
-The catalog contains 22 real scooter models and 175 sourced images. 21 products have 8 images each; the Vive Automatic Folding Scooter has 7 after duplicate and unrelated/promotional graphics were excluded. Product specifications, image URLs, and source price dates are recorded in `docs/CATALOG-SOURCES.md`, `docs/CATALOG-EXPANSION.md`, and `docs/catalog-gallery-audit.json`. Source pricing is a benchmark, not a claim about the store's previous selling price. Discount prices are proposed launch prices, and availability defaults to confirmation required.
+The catalog contains 25 real scooter models and 200 sourced images. Every seeded product has eight genuine exact-model photographs. Seated mobility models and two-wheel/four-wheel standing models have clear category labels. Product specifications, source prices and image provenance are retained in admin and the repository audit documents. Offer prices require supplier confirmation; availability defaults to confirmation required.
 
 Before accepting paid orders, confirm supplier stock and margins, rights to use manufacturer images, business identity, product-specific returns and warranty eligibility, delivery destinations/taxes, and appropriate customer terms. This version makes no authorized-dealer, verified-review, free-delivery, or warranty promises.
 
@@ -40,4 +40,6 @@ Local preview identity simulation is loopback-only and excluded from production.
 
 ## Product gallery publishing rule
 
-Aim for at least 8 distinct images of the exact model. Published products require at least 5; galleries with 5–7 require a written source-availability exception. Drafts can be saved with fewer. Galleries support up to 16 images, descriptive captions, keyboard navigation, scrolling thumbnails, and full-size viewing. Common CDN size variants do not count as different photos.
+Aim for at least 8 distinct images of the exact model. Published products require at least 5; galleries with 5–7 require a written source-availability exception. Drafts can be saved with fewer. Galleries support up to 16 images, descriptive captions, keyboard navigation, a visible thumbnail grid, and full-size viewing. Common CDN size variants do not count as different photos.
+
+Product source URLs, reference prices, research dates and gallery exception notes appear only in admin. Customer pages and `/api/catalog` receive an explicit public product projection; the full seed catalog is never imported into the customer client bundle.

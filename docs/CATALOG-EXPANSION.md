@@ -105,9 +105,9 @@ Drive Scout LT4 was researched but not added: retailer legacy-body photos/specs 
 
 All launch prices are proposed benchmarks pending supplier availability, merchant margin checks and approval. No retailer reviews, delivery promises, warranty eligibility, dealer authorization or stock counts are transferred. Public availability of images does not establish commercial reuse permission; the existing private-preview image-rights policy remains applicable. Per-image source URLs, paths, captions and hashes are in result.json.
 
-## Gallery exceptions
+## Resolved gallery exception
 
-- Automatic Folding Scooter: 7 images. Seven distinct photographs of this exact model were verified across manufacturer and retailer galleries. Repeated images and non-product promotional graphics were excluded.
+The Automatic Folding Scooter now has eight genuine photos. A distinct side profile was obtained from the manufacturer MOB1058 product sheet mirrored at https://www.rehabmart.com/pdfs/folding_mobility_scooter_-_product_sheet.pdf (page 1). The former seven-image exception is resolved.
 
 A supplemental exact-model Series A basket/headlight photo from Custom Mobility brings that gallery to 8. Victory10 SC710 identity was checked against the current manufacturer listing with EZ Turn; the photos are not from a Victory10.2 listing. Optional high-back seats/colors remain clearly captioned.
 

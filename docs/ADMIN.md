@@ -19,3 +19,9 @@ Run boundary checks with `node --test tests/backend.test.mjs` after installing d
 ## Photo galleries
 
 Use8 distinct exact-model images whenever possible. Publishing requires at least 5. If only 5–7 genuine images can be sourced, enter a specific source-availability explanation in the gallery exception field. Duplicate links and CDN size/quality variants count once. Up to 16 distinct images are supported, and blank lines in pasted URL lists are ignored. Photo previews and the distinct-image counter help check a listing before saving.
+
+## Customer reference visibility
+
+Source URLs, reference prices, research dates and gallery exception notes stay in protected admin records. The customer API and server-rendered pages use an explicit public product projection. Customer galleries show every thumbnail in a four-column grid.
+
+Standing and 2-wheel are available as admin categories. Standing models can record speeds up to 35 mph; seated listings retain the 25 mph validation limit. Classify standing models explicitly and describe the rider balance requirements, range conditions and optional configurations accurately.

@@ -17,7 +17,7 @@ const freshProduct = (): Product => ({
   price: 799, referencePrice: 899, description: "", image: "", images: [], rangeMiles: 10, maxSpeedMph: 4, capacityLb: 300, weightLb: null,
   featured: false, sourceUrl: "", priceCheckedAt: new Date().toISOString().slice(0, 10), availability: "confirm", active: false,
 });
-const categoryChoices = [{ id: "travel", label: "Travel & portable" }, { id: "folding", label: "Folding" }, { id: "3-wheel", label: "3-wheel" }, { id: "4-wheel", label: "4-wheel" }, { id: "heavy-duty", label: "Heavy-duty" }, { id: "outdoor", label: "Outdoor" }];
+const categoryChoices = [{ id: "travel", label: "Travel & portable" }, { id: "folding", label: "Folding" }, { id: "3-wheel", label: "3-wheel" }, { id: "4-wheel", label: "4-wheel" }, { id: "heavy-duty", label: "Heavy-duty" }, { id: "outdoor", label: "Outdoor" }, { id: "standing", label: "Standing" }, { id: "2-wheel", label: "2-wheel" }];
 
 export default function AdminPanel({ email, signOutPath }: { email: string; signOutPath: string }) {
   const [tab, setTab] = useState<"products" | "inquiries" | "settings">("products");
@@ -97,7 +97,7 @@ export default function AdminPanel({ email, signOutPath }: { email: string; sign
         {editingGallery.length>0&&<div className="adm-full adm-gallery-previews">{editingGallery.filter(isSafeImageSource).map((src,i)=><a href={src} target="_blank" rel="noopener noreferrer" key={src} aria-label={"Preview gallery photo "+(i+1)}><img src={src} alt={"Gallery photo "+(i+1)} loading="lazy"/><span>{i+1}</span></a>)}</div>}
         {editingGallery.length >= MIN_PRODUCT_IMAGES && editingGallery.length < TARGET_PRODUCT_IMAGES && <label className="adm-full">Why fewer than 8 exact-model images are available<textarea rows={2} required={editing.active} minLength={20} maxLength={600} value={editing.galleryExceptionNote||""} onChange={event=>field("galleryExceptionNote",event.target.value)} placeholder="Record the sources checked and why only 5–7 distinct images are available."/></label>}
         <label>Maximum range (miles)<input required type="number" min="0.1" max="100" step="0.1" value={editing.rangeMiles} onChange={event => field("rangeMiles", Number(event.target.value))} /></label>
-        <label>Maximum speed (mph)<input required type="number" min="0.1" max="25" step="0.1" value={editing.maxSpeedMph} onChange={event => field("maxSpeedMph", Number(event.target.value))} /></label>
+        <label>Maximum speed (mph)<input required type="number" min="0.1" max={editing.category === "standing" || editing.categories.includes("standing") ? 35 : 25} step="0.1" value={editing.maxSpeedMph} onChange={event => field("maxSpeedMph", Number(event.target.value))} /></label>
         <label>Weight capacity (lb)<input required type="number" min="50" max="1000" value={editing.capacityLb} onChange={event => field("capacityLb", Number(event.target.value))} /></label>
         <label>Product weight (lb, optional)<input type="number" min="1" max="500" step="0.1" value={editing.weightLb ?? ""} onChange={event => field("weightLb", event.target.value ? Number(event.target.value) : null)} /></label>
         <label className="adm-full">Specification / reference price source<input required type="url" placeholder="https://manufacturer.com/product" value={editing.sourceUrl} onChange={event => field("sourceUrl", event.target.value)} /></label>

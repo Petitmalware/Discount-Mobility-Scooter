@@ -1,6 +1,7 @@
 import Storefront from "../../storefront";
 import {notFound} from "next/navigation";
 import {readProducts} from "@/lib/server/store";
+import {publicProduct} from "@/lib/public-product";
 export const dynamic = "force-dynamic";
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}) {
   const {slug}=await params;
@@ -9,6 +10,7 @@ export async function generateMetadata({params}: {params:Promise<{slug:string}>}
 }
 export default async function ScooterPage({params}: {params: Promise<{slug:string}>}) {
   const {slug} = await params;
-  if(!(await readProducts()).some(p=>p.slug===slug))notFound();
-  return <Storefront initialSlug={slug} />;
+  const products=await readProducts();
+  if(!products.some(p=>p.slug===slug))notFound();
+  return <Storefront initialSlug={slug} initialProducts={products.map(publicProduct)} />;
 }

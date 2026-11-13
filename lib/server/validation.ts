@@ -6,7 +6,7 @@ export class RequestError extends Error {
   constructor(message: string, status = 400) { super(message); this.status = status; }
 }
 
-export const productCategories = ["travel", "folding", "3-wheel", "4-wheel", "heavy-duty", "outdoor"] as const;
+export const productCategories = ["travel", "folding", "2-wheel", "3-wheel", "4-wheel", "heavy-duty", "outdoor", "standing"] as const;
 function category(value: unknown): string {
   const key = text(value, "Category", 2, 60).toLowerCase().replaceAll(" ", "-");
   if (!(productCategories as readonly string[]).includes(key)) throw new RequestError("Choose a supported scooter category.");
@@ -94,7 +94,7 @@ export function validateProduct(value: unknown, existingId?: string): Product {
     name: text(data.name, "Name", 2, 160), brand: text(data.brand, "Brand", 2, 80),
     category: mainCategory, categories, price, referencePrice,
     description: text(data.description, "Description", 10, 4000), image, images, imageDetails, galleryExceptionNote,
-    rangeMiles: number(data.rangeMiles, "Range", 0.1, 100), maxSpeedMph: number(data.maxSpeedMph, "Speed", 0.1, 25),
+    rangeMiles: number(data.rangeMiles, "Range", 0.1, 100), maxSpeedMph: number(data.maxSpeedMph, "Speed", 0.1, categories.includes("standing") ? 35 : 25),
     capacityLb: number(data.capacityLb, "Weight capacity", 50, 1000),
     weightLb: data.weightLb === null || data.weightLb === "" ? null : number(data.weightLb, "Product weight", 1, 500),
     featured: data.featured === true, active: data.active === true,

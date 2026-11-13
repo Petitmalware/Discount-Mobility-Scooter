@@ -154,4 +154,4 @@ Vive King Neptune was researched but excluded because its current manufacturer p
 
 ## November 13 gallery and catalog expansion
 
-The catalog now contains 22 models and 175 distinct selected images. All listings have 8 images except the Vive Automatic Folding Scooter, which has 7 verified usable exact-model images. See `CATALOG-GALLERIES.md` and `CATALOG-EXPANSION.md` for current photo counts, exceptions and the 7 additional models. Existing product prices and specifications were preserved.
+The catalog now contains 25 models and 200 selected images, with eight per product. See `CATALOG-GALLERIES.md`, `CATALOG-EXPANSION.md` and `STANDING-SCOOTERS.md` for current photo counts and sources. Existing mobility product prices and specifications were preserved. Source/reference information is admin-only on the website.

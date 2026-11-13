@@ -20,8 +20,22 @@ const { readJson } = await import(requestUrl);
 const quoteUrl = await moduleUrl("../lib/server/quote.ts", { '"./validation"': JSON.stringify(validationUrl) });
 const { quoteItems } = await import(quoteUrl);
 const { adminPolicy } = await import(await moduleUrl("../lib/server/auth-policy.ts"));
+const { publicProduct } = await import(await moduleUrl("../lib/public-product.ts"));
 const goodInquiry = { name: "Alex Rider", email: "alex@example.com", paymentPreference: "assisted", items: [{ productId: "travel", quantity: 1 }], consent: true };
 const product = { id: "travel", name: "Travel scooter", price: 649.99, active: true, availability: "confirm" };
+
+test("customer catalog excludes admin research and preserves the complete gallery", async () => {
+  const catalog=JSON.parse(await fs.readFile(new URL("../lib/catalog-data.json",import.meta.url),"utf8"));
+  for(const record of catalog){
+    const safe=publicProduct({...record,futureAdminNote:"Private research"});
+    for(const field of ["referencePrice","sourceUrl","priceCheckedAt","galleryExceptionNote","futureAdminNote"]){
+      assert.equal(Object.hasOwn(safe,field),false,`${record.id}: exposed ${field}`);
+    }
+    assert.deepEqual(safe.images,record.images);
+    assert.deepEqual(safe.imageDetails,record.imageDetails);
+    assert.equal(safe.price,record.price);
+  }
+});
 
 test("admin access fails closed and requires an exact allowlisted email", () => {
   assert.deepEqual(adminPolicy("owner@example.com", ""), { configured: false, authorized: false });
@@ -99,6 +113,7 @@ test("every catalog gallery has sourced, distinct, intact local images", async (
   for(const product of catalog){
     const normalized={...product,category:product.category.toLowerCase().replaceAll(" ","-"),categories:product.categories.map(c=>c.toLowerCase().replaceAll(" ","-"))};
     const validated=validateProduct(normalized,product.id);
+    assert.ok(product.images.length>=8,`${product.slug}: the seeded catalog requires at least eight photos`);
     assert.equal(validated.images.length,product.images.length,`${product.slug}: duplicate image URLs`);
     const record=audit.products.find(p=>p.id===product.id);
     assert.ok(record,`${product.slug}: missing image provenance`);
@@ -122,4 +137,12 @@ test("every catalog gallery has sourced, distinct, intact local images", async (
       assert.ok(product.imageDetails?.some(d=>d.src===src&&d.alt),`${src}: missing accessible photo description`);
     }
   }
+});
+
+test("standing wheel categories can be edited without seated-model speed limits", async () => {
+  const catalog=JSON.parse(await fs.readFile(new URL("../lib/catalog-data.json",import.meta.url),"utf8"));
+  const standing=catalog.find(p=>p.id==="cycleboard-x-quad-3000");
+  assert.equal(validateProduct(standing).maxSpeedMph,27);
+  assert.equal(validateProduct({...standing,category:"4-wheel"}).maxSpeedMph,27);
+  assert.throws(()=>validateProduct({...standing,categories:["4-wheel"],category:"4-wheel"}),/speed/);
 });
