@@ -5,7 +5,7 @@ import type { AdminStoreSettings, Inquiry, InquiryStatus, Product } from "@/lib/
 
 async function api<T>(path: string, method = "GET", body?: unknown): Promise<T> {
   const response = await fetch(`/api/admin/${path}`, { method, headers: body === undefined ? {} : { "Content-Type": "application/json" }, body: body === undefined ? undefined : JSON.stringify(body), cache: "no-store" });
-  const result = await response.json();
+  const result = await response.json() as T & { error?: string };
   if (!response.ok) throw new Error(result.error || "The request could not be completed.");
   return result as T;
 }
