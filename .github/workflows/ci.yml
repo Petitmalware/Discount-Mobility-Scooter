@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: '24'
           cache: npm
+      - run: npm install --global npm@11.19.1 --ignore-scripts --no-audit --no-fund
       - run: npm run install:ci
       - run: node node_modules/typescript/bin/tsc --noEmit
       - run: node --test tests/backend.test.mjs

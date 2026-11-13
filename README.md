@@ -24,7 +24,7 @@ Before accepting paid orders, confirm supplier stock and margins, rights to use 
 
 ## Development
 
-Requires Node 22.13+ and npm. `npm run install:ci` installs the locked dependencies. `npm run dev` starts the portable preview. `npm run build` emits the Cloudflare Worker and static assets. `node --test tests/backend.test.mjs` checks critical validation boundaries. `node node_modules/typescript/bin/tsc --noEmit` checks application types.
+Requires Node 22.13+ and npm 11.19.1, the version used to maintain the portable lockfile and run CI. `npm run install:ci` installs the locked dependencies. `npm run dev` starts the portable preview. `npm run build` emits the Cloudflare Worker and static assets. `node --test tests/backend.test.mjs` checks critical validation boundaries. `node node_modules/typescript/bin/tsc --noEmit` checks application types.
 
 The application uses Vinext/React, Cloudflare D1, and dispatch-owned ChatGPT authentication. `.openai/hosting.json` contains Site identity and the D1 binding. Runtime secrets stay in the hosting service. Generated output, local credentials, and local database state are ignored.
 
