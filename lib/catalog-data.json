@@ -1,0 +1,415 @@
+[
+  {
+    "id": "go-go-elite-traveller-gen-3",
+    "slug": "go-go-elite-traveller-gen-3",
+    "name": "Go Go Elite Traveller Gen 3",
+    "brand": "Pride Mobility",
+    "category": "Travel",
+    "categories": [
+      "Travel",
+      "4-Wheel"
+    ],
+    "price": 1599,
+    "referencePrice": 1785,
+    "description": "A roomier travel scooter with a textured deck, mesh-back seat and compact turning. Separates into five sections for transport.",
+    "image": "/images/products/go-go-elite-traveller-gen-3.jpg",
+    "images": [
+      "/images/products/go-go-elite-traveller-gen-3.jpg"
+    ],
+    "rangeMiles": 8.9,
+    "maxSpeedMph": 4.23,
+    "capacityLb": 300,
+    "weightLb": null,
+    "featured": true,
+    "sourceUrl": "https://www.pridemobility.com/go-go-travel-mobility/go-go-elite-traveller-gen-3/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-3-wheel",
+    "slug": "vive-3-wheel",
+    "name": "3-Wheel Travel Scooter",
+    "brand": "Vive Mobility",
+    "category": "3-Wheel",
+    "categories": [
+      "Travel",
+      "3-Wheel"
+    ],
+    "price": 579,
+    "referencePrice": 624.99,
+    "description": "An approachable everyday scooter for errands and tighter indoor spaces, with a swivel seat, removable basket and simple speed control.",
+    "image": "/images/products/vive-3-wheel.jpg",
+    "images": [
+      "/images/products/vive-3-wheel.jpg"
+    ],
+    "rangeMiles": 12.4,
+    "maxSpeedMph": 3.7,
+    "capacityLb": 265,
+    "weightLb": 77,
+    "featured": true,
+    "sourceUrl": "https://www.vivehealth.com/products/3-wheel-mobility-scooter",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-4-wheel",
+    "slug": "vive-4-wheel",
+    "name": "4-Wheel Travel Scooter",
+    "brand": "Vive Mobility",
+    "category": "4-Wheel",
+    "categories": [
+      "Travel",
+      "4-Wheel"
+    ],
+    "price": 629,
+    "referencePrice": 674.99,
+    "description": "A compact four-wheel option with a height-adjustable swivel seat, front basket and removable battery pack for everyday outings.",
+    "image": "/images/products/vive-4-wheel.jpg",
+    "images": [
+      "/images/products/vive-4-wheel.jpg"
+    ],
+    "rangeMiles": 12,
+    "maxSpeedMph": 3.7,
+    "capacityLb": 265,
+    "weightLb": 88.2,
+    "featured": true,
+    "sourceUrl": "https://www.vivehealth.com/products/4-wheel-mobility-scooter",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-sport-4-wheel",
+    "slug": "go-go-sport-4-wheel",
+    "name": "Go Go Sport 4-Wheel",
+    "brand": "Pride Mobility",
+    "category": "Travel",
+    "categories": [
+      "Travel",
+      "4-Wheel"
+    ],
+    "price": 2099,
+    "referencePrice": 2299,
+    "description": "A versatile travel scooter with bright front lighting, easy disassembly and EZ Turn technology for a tighter turning circle.",
+    "image": "/images/products/go-go-sport-4-wheel.jpg",
+    "images": [
+      "/images/products/go-go-sport-4-wheel.jpg"
+    ],
+    "rangeMiles": 12,
+    "maxSpeedMph": 4.7,
+    "capacityLb": 325,
+    "weightLb": null,
+    "featured": true,
+    "sourceUrl": "https://www.pridemobility.com/go-go-travel-mobility/go-go-sport-4-wheel/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-auto-folding",
+    "slug": "vive-auto-folding",
+    "name": "Automatic Folding Scooter",
+    "brand": "Vive Mobility",
+    "category": "Folding",
+    "categories": [
+      "Folding",
+      "Travel",
+      "4-Wheel"
+    ],
+    "price": 749,
+    "referencePrice": 799.99,
+    "description": "Folds and unfolds with its remote control for convenient storage. A compact choice for smooth indoor and outdoor surfaces.",
+    "image": "/images/products/vive-auto-folding.jpg",
+    "images": [
+      "/images/products/vive-auto-folding.jpg"
+    ],
+    "rangeMiles": 11.3,
+    "maxSpeedMph": 3.73,
+    "capacityLb": 220,
+    "weightLb": 55.11,
+    "featured": false,
+    "sourceUrl": "https://www.vivehealth.com/products/foldable-mobility-scooter",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "vive-neptune",
+    "slug": "vive-neptune",
+    "name": "Neptune Mobility Scooter",
+    "brand": "Vive Mobility",
+    "category": "4-Wheel",
+    "categories": [
+      "4-Wheel",
+      "Outdoor"
+    ],
+    "price": 829,
+    "referencePrice": 899.99,
+    "description": "A comfortable four-wheel scooter with 9-inch flat-free tires, an adjustable seat and quick-connect removable battery.",
+    "image": "/images/products/vive-neptune.jpg",
+    "images": [
+      "/images/products/vive-neptune.jpg"
+    ],
+    "rangeMiles": 16,
+    "maxSpeedMph": 3.75,
+    "capacityLb": 300,
+    "weightLb": null,
+    "featured": false,
+    "sourceUrl": "https://www.vivehealth.com/products/neptune-mobility-scooter",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-elite-traveller-3-wheel",
+    "slug": "go-go-elite-traveller-3-wheel",
+    "name": "Go Go Elite Traveller 3-Wheel",
+    "brand": "Pride Mobility",
+    "category": "3-Wheel",
+    "categories": [
+      "Travel",
+      "3-Wheel"
+    ],
+    "price": 1499,
+    "referencePrice": 1680,
+    "description": "A compact three-wheel travel scooter with a 33-inch turning radius, removable basket and five-piece disassembly.",
+    "image": "/images/products/go-go-elite-traveller-3-wheel.jpg",
+    "images": [
+      "/images/products/go-go-elite-traveller-3-wheel.jpg"
+    ],
+    "rangeMiles": 7.25,
+    "maxSpeedMph": 4,
+    "capacityLb": 300,
+    "weightLb": 95,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/go-go-travel-mobility/go-go-elite-traveller-3-wheel/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-sport-3-wheel",
+    "slug": "go-go-sport-3-wheel",
+    "name": "Go Go Sport 3-Wheel",
+    "brand": "Pride Mobility",
+    "category": "3-Wheel",
+    "categories": [
+      "Travel",
+      "3-Wheel"
+    ],
+    "price": 1899,
+    "referencePrice": 2109,
+    "description": "A maneuverable three-wheel scooter with an ergonomic delta tiller, front lighting and easy transport disassembly.",
+    "image": "/images/products/go-go-sport-3-wheel.jpg",
+    "images": [
+      "/images/products/go-go-sport-3-wheel.jpg"
+    ],
+    "rangeMiles": 12.75,
+    "maxSpeedMph": 4.7,
+    "capacityLb": 325,
+    "weightLb": 122.25,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/go-go-travel-mobility/go-go-sport-3-wheel/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "revo-2-4-wheel",
+    "slug": "revo-2-4-wheel",
+    "name": "Revo 2.0 4-Wheel",
+    "brand": "Pride Mobility",
+    "category": "Heavy Duty",
+    "categories": [
+      "Heavy Duty",
+      "4-Wheel",
+      "Outdoor"
+    ],
+    "price": 2549,
+    "referencePrice": 2799,
+    "description": "Suspension and a broad comfortable seat meet a frame that separates for transport. A versatile option for longer everyday outings.",
+    "image": "/images/products/revo-2-4-wheel.jpg",
+    "images": [
+      "/images/products/revo-2-4-wheel.jpg"
+    ],
+    "rangeMiles": 17.8,
+    "maxSpeedMph": 5.2,
+    "capacityLb": 400,
+    "weightLb": null,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/pride-mobility-scooters/revo-2.0-4-wheel/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "victory-10-4-wheel",
+    "slug": "victory-10-4-wheel",
+    "name": "Victory 10 4-Wheel",
+    "brand": "Pride Mobility",
+    "category": "4-Wheel",
+    "categories": [
+      "4-Wheel",
+      "Outdoor",
+      "Heavy Duty"
+    ],
+    "price": 2949,
+    "referencePrice": 3238,
+    "description": "A full-size scooter with 10-inch tires, a sliding swivel seat and a front light, designed for comfortable daily journeys.",
+    "image": "/images/products/victory-10-4-wheel.jpg",
+    "images": [
+      "/images/products/victory-10-4-wheel.jpg"
+    ],
+    "rangeMiles": 15.5,
+    "maxSpeedMph": 5.3,
+    "capacityLb": 400,
+    "weightLb": null,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/pride-mobility-scooters/victory-10-4-wheel/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-super-portable",
+    "slug": "go-go-super-portable",
+    "name": "Go Go Super Portable",
+    "brand": "Pride Mobility",
+    "category": "Folding",
+    "categories": [
+      "Folding",
+      "Travel",
+      "4-Wheel"
+    ],
+    "price": 3249,
+    "referencePrice": 3569,
+    "description": "Folds to a slim profile without removing the seat. Magnetic charging and a towing handle simplify the travel routine.",
+    "image": "/images/products/go-go-super-portable.jpg",
+    "images": [
+      "/images/products/go-go-super-portable.jpg"
+    ],
+    "rangeMiles": 10,
+    "maxSpeedMph": 4.5,
+    "capacityLb": 300,
+    "weightLb": 49.9,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/go-go-travel-mobility/go-go-super-portable/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "go-go-carbon",
+    "slug": "go-go-carbon",
+    "name": "Go Go Carbon",
+    "brand": "Pride Mobility",
+    "category": "Folding",
+    "categories": [
+      "Folding",
+      "Travel",
+      "4-Wheel"
+    ],
+    "price": 4349,
+    "referencePrice": 4789,
+    "description": "A folding scooter with a carbon fiber frame, telescoping tiller and NFC ignition. Built around compact storage and travel convenience.",
+    "image": "/images/products/go-go-carbon.jpg",
+    "images": [
+      "/images/products/go-go-carbon.jpg"
+    ],
+    "rangeMiles": 10,
+    "maxSpeedMph": 3.7,
+    "capacityLb": 300,
+    "weightLb": null,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/go-go-travel-mobility/go-go-carbon/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "maxima-4-wheel",
+    "slug": "maxima-4-wheel",
+    "name": "Maxima 4-Wheel",
+    "brand": "Pride Mobility",
+    "category": "Heavy Duty",
+    "categories": [
+      "Heavy Duty",
+      "4-Wheel",
+      "Outdoor"
+    ],
+    "price": 4499,
+    "referencePrice": 4935,
+    "description": "A high-capacity scooter with a reclining high-back seat, side bumpers and a full lighting package for supported everyday travel.",
+    "image": "/images/products/maxima-4-wheel.jpg",
+    "images": [
+      "/images/products/maxima-4-wheel.jpg"
+    ],
+    "rangeMiles": 19.5,
+    "maxSpeedMph": 5.8,
+    "capacityLb": 500,
+    "weightLb": null,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/pride-mobility-scooters/maxima-4-wheel/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "pursuit-2",
+    "slug": "pursuit-2",
+    "name": "Pursuit 2 · 100Ah",
+    "brand": "Pride Mobility",
+    "category": "Outdoor",
+    "categories": [
+      "Outdoor",
+      "Heavy Duty",
+      "4-Wheel"
+    ],
+    "price": 4899,
+    "referencePrice": 5392,
+    "description": "A substantial outdoor scooter with pneumatic tires, front and rear suspension and a high-back seat for longer excursions.",
+    "image": "/images/products/pursuit-2.jpg",
+    "images": [
+      "/images/products/pursuit-2.jpg"
+    ],
+    "rangeMiles": 40,
+    "maxSpeedMph": 9.3,
+    "capacityLb": 400,
+    "weightLb": null,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/pride-mobility-scooters/pursuit-2/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  },
+  {
+    "id": "px4",
+    "slug": "px4",
+    "name": "PX4 Outdoor Scooter",
+    "brand": "Pride Mobility",
+    "category": "Outdoor",
+    "categories": [
+      "Outdoor",
+      "Heavy Duty",
+      "4-Wheel"
+    ],
+    "price": 6099,
+    "referencePrice": 6730,
+    "description": "A large outdoor scooter with suspension, memory-foam seating and NFC ignition, suited to riders seeking more space and capacity.",
+    "image": "/images/products/px4.jpg",
+    "images": [
+      "/images/products/px4.jpg"
+    ],
+    "rangeMiles": 23.4,
+    "maxSpeedMph": 9.2,
+    "capacityLb": 500,
+    "weightLb": 351.4,
+    "featured": false,
+    "sourceUrl": "https://www.pridemobility.com/pride-mobility-scooters/px4/",
+    "priceCheckedAt": "2026-11-12",
+    "availability": "confirm",
+    "active": true
+  }
+]

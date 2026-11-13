@@ -1,0 +1,17 @@
+# Store administration
+
+The `/admin` route uses the hosting platform’s ChatGPT sign-in. Authentication alone does not grant admin access. Set the runtime variable `ADMIN_EMAILS` to a comma-separated list of explicitly authorized ChatGPT account email addresses. An empty allowlist denies everyone, including the first visitor. Keep runtime values out of Git. Do not enter passwords or wallet private keys in the admin panel.
+
+Sites verifies identity before injecting `oai-authenticated-user-*` headers. If deploying this source elsewhere, replace that platform integration with verified authentication, or place it behind a trusted authenticating proxy which removes visitor-supplied identity headers. Exposing the Worker directly while trusting raw headers is not a supported secure deployment.
+
+Product edits are durable D1 overrides of the checked-in seed catalog. Add a scooter as a draft, check its specification and reference-price source, confirm image publication permission and your supply arrangements, then publish. The **Available** status is an explicit owner assertion. The seed’s **Confirm availability** status is not an inventory guarantee. Archive removes a product from browsing and new quote requests while preserving its details.
+
+Business email and phone are optional and hidden from the storefront when blank. Prices are stored in the selected catalog currency; changing currency does not perform exchange conversion. Reprice all products before changing currency. Shipping, tax, returns and warranty terms must reflect the actual business and be confirmed in the written quote.
+
+BTC and USDT entries are receiving-address metadata, not private keys. They are visible only to an authorized administrator and are excluded from the public catalog response. An enabled method with no address (and, for USDT, no network) falls back to a payment-assistance inquiry. Adding these settings does not create automatic payment processing. Verify the exact receiving address, USDT network, invoice amount, expiry, delivery and refund terms independently before sending a customer an invoice. Never infer payment success from a customer screenshot or transaction ID alone.
+
+Customer requests appear in **Quote requests**. A successful request means D1 saved the contact details, product/price snapshot, preference and opaque reference. It does not confirm stock, reserve goods, submit a blockchain transaction, take a payment or send an email. Follow up using the customer’s email or phone and update status to Contacted, Quoted or Closed. Keep customer records private and apply your business’s data-retention policy. The dashboard displays the latest 200 requests.
+
+Every mutation validates inputs on the server. Cart prices come from the server catalog, not the browser. Same-origin JSON checks and payload limits apply to writes. Inquiry submission is limited to five requests per signed-in identity (or IP for anonymous visitors) per fifteen-minute window; administrative writes are limited to 100 per signed-in administrator per window. Parameterized SQL is used throughout. Schema changes are migration-owned and are never run in an HTTP handler.
+
+Run boundary checks with `node --test tests/backend.test.mjs` after installing dependencies. Tests cover contact validation, duplicate/invalid quantities, authoritative prices, unavailable products, cross-origin writes, oversized bodies and unconfigured crypto settings.
