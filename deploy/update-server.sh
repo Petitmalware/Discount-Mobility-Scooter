@@ -12,6 +12,30 @@ if [ ! -d "$app/source/.git" ]; then git clone --quiet "$repo" "$app/source"; fi
 test "$(git -C "$app/source" remote get-url origin)" = "$repo" || { echo 'Unexpected source remote.' >&2; exit 1; }
 git -C "$app/source" fetch --quiet origin main
 sha=$(git -C "$app/source" rev-parse origin/main)
+# Verify the exact Linux CI run, including the security audit, before executing
+# any build scripts from the new commit. This verifier is part of the installed,
+# root-owned updater; it is not loaded from the fetched source tree.
+"$runtime/bin/node" --input-type=module - "$sha" <<'VERIFY'
+import {setTimeout as pause} from 'node:timers/promises';
+const sha=process.argv[2];
+if(!/^[0-9a-f]{40}$/.test(sha))throw new Error('Invalid source commit.');
+const endpoint=`https://api.github.com/repos/Petitmalware/Discount-Mobility-Scooter/actions/runs?head_sha=${sha}&event=push&branch=main&per_page=20`;
+let verified=false;
+for(let attempt=0;attempt<30;attempt++){
+  const response=await fetch(endpoint,{headers:{'User-Agent':'Discount-Mobility-Verified-Deploy'},signal:AbortSignal.timeout(15000)});
+  if(!response.ok)throw new Error('GitHub release verification is unavailable.');
+  const data=await response.json();
+  const runs=(data.workflow_runs||[]).filter(run=>run.head_sha===sha&&run.head_branch==='main'&&run.event==='push'&&run.path==='.github/workflows/ci.yml').sort((a,b)=>b.id-a.id);
+  const run=runs[0];
+  if(run?.status==='completed'){
+    if(run.conclusion!=='success')throw new Error('This commit failed its required GitHub checks.');
+    console.log(`Verified exact-commit Linux checks: ${run.html_url}`);verified=true;break;
+  }
+  if(attempt===0)console.log('Waiting for the exact commit to pass GitHub checks.');
+  await pause(10000);
+}
+if(!verified)throw new Error('No successful exact-commit check was confirmed.');
+VERIFY
 release="$app/releases/$(date -u +%Y%m%dT%H%M%SZ)-${sha:0:12}"
 case "$release" in "$app"/releases/*) ;; *) exit 1;; esac
 install -d -o dms-build -g dms-build -m 0755 "$release"
@@ -21,7 +45,6 @@ npmrun(){ runuser -u dms-build -- env PATH="$runtime/bin:$PATH" "$runtime/bin/no
 npmrun install:ci
 npmrun typecheck
 npmrun test
-npmrun audit:security
 npmrun build:node
 chown -R root:root "$release"
 chmod -R go-w "$release"
