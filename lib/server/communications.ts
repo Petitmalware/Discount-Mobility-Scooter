@@ -67,9 +67,13 @@ export async function createDocument(inquiryId: string, value: unknown) {
     if (previous) return documentPreview(previous.id);
     const invoice = await readDocument(payment.invoiceId);
     document = buildReceipt(invoice, payment, payments);
+    // One immutable receipt identity per recorded payment makes concurrent
+    // draft requests and their later email submissions share the same record.
+    document.id = `receipt-${payment.id}`;
+    document.number = `DMS-RCT-${payment.id.replaceAll("-", "").slice(0, 10).toUpperCase()}`;
   } else document = buildDocument(data, inquiry, products);
   await saveDocument(document);
-  return { document, preview: renderDocument(document, await readSettings()) };
+  return documentPreview(document.id);
 }
 export async function recordPayment(inquiryId: string, value: unknown) {
   const data = recordObject(value);

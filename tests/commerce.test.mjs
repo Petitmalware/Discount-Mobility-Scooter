@@ -40,6 +40,7 @@ test('database prevents overpayments and duplicate sends while preserving saved 
  globalThis.__commerceTestDB=db;
  const store=await import(await moduleUrl('../lib/server/commerce-store.ts',{'"./store"':JSON.stringify(stub),'"./validation"':JSON.stringify(validation)}));
  try{const invoice=buildDocument(input,customer,[]);await store.saveDocument(invoice);const p=buildPayment({amount:1000,method:'Bank transfer',reference:'BANK-1',receivedAt:'2026-11-18T12:00:00Z',confirmReceived:true},invoice);await store.savePayment(p);assert.equal((await store.savePayment(p)).id,p.id);await assert.rejects(()=>store.savePayment(buildPayment({amount:500,method:'Bank transfer',reference:'BANK-2',receivedAt:'2026-11-18T12:00:00Z',confirmReceived:true},invoice)));assert.equal((await store.readDocument(invoice.id)).balance,459.98);
+ const receipt={...buildReceipt(invoice,p,[p]),id:`receipt-${p.id}`};await Promise.all([store.saveDocument(receipt),store.saveDocument(receipt)]);assert.equal((await store.readDocuments(customer.id)).filter(d=>d.kind==='receipt').length,1);
  const email={id:'ack:example',inquiryId:customer.id,documentId:null,kind:'acknowledgement',to:customer.email,subject:'Your request',preview:{subject:'Your request',html:'Hello',text:'Hello'},createdAt:new Date().toISOString()};await store.ensureEmail(email,true);await store.ensureEmail(email,true);assert.equal((await store.readEmailLogs(customer.id)).length,1);await assert.rejects(()=>store.ensureEmail({...email,subject:'Changed'},true));
  }finally{db.close();delete globalThis.__commerceTestDB;}
 });

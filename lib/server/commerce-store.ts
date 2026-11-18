@@ -9,7 +9,8 @@ export async function readInquiry(id: string): Promise<Inquiry> {
   return { ...JSON.parse(row.data), status: row.status };
 }
 export async function saveDocument(document: OrderDocument): Promise<void> {
-  await database().prepare("INSERT INTO order_documents (id, inquiry_id, kind, data, total_cents, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)").bind(document.id, document.inquiryId, document.kind, JSON.stringify(document), Math.round(document.total * 100), document.status, document.createdAt).run();
+  const insert = document.kind === "receipt" ? "INSERT OR IGNORE" : "INSERT";
+  await database().prepare(`${insert} INTO order_documents (id, inquiry_id, kind, data, total_cents, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)`).bind(document.id, document.inquiryId, document.kind, JSON.stringify(document), Math.round(document.total * 100), document.status, document.createdAt).run();
 }
 export async function readPayments(inquiryId: string): Promise<PaymentRecord[]> {
   const result = await database().prepare("SELECT data FROM payment_records WHERE inquiry_id = ? ORDER BY created_at ASC LIMIT 500").bind(inquiryId).all<{ data: string }>();
