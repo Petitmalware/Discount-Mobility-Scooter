@@ -1,5 +1,6 @@
 import vinext from "vinext";
 import { defineConfig } from "vite";
+import { fileURLToPath } from "node:url";
 import hostingConfig from "./.openai/hosting.json";
 import { readExecutionProfile } from "./scripts/execution-profile.mjs";
 import { configureToolEnvironment } from "./scripts/tool-environment.mjs";
@@ -14,6 +15,7 @@ const { d1, r2 } = hostingConfig;
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 const managedLinux = readExecutionProfile() === "managed-linux";
+const nodeTarget = process.env.DMS_BUILD_TARGET === "node";
 
 const localBindingConfig = {
   main: "./worker/index.ts",
@@ -41,9 +43,10 @@ export default defineConfig(async ({ command }) => {
   configureToolEnvironment(process.cwd());
 
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
-  const { cloudflare } = await import("@cloudflare/vite-plugin");
+  const cloudflare = nodeTarget ? null : (await import("@cloudflare/vite-plugin")).cloudflare;
 
   return {
+    ...(nodeTarget ? { resolve: { alias: { "cloudflare:workers": fileURLToPath(new URL("./lib/server/node-env.ts", import.meta.url)) } } } : {}),
     server: {
       ...(managedLinux
         ? { host: "0.0.0.0", allowedHosts: ["terminal.local"] }
@@ -54,9 +57,9 @@ export default defineConfig(async ({ command }) => {
     },
     plugins: [
       vinext(),
-      sites({ mockAuth: !managedLinux }),
-      connectorPreview(),
-      cloudflare({
+      sites({ mockAuth: !nodeTarget && !managedLinux }),
+      ...(!nodeTarget ? [connectorPreview()] : []),
+      ...(cloudflare ? [cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
         inspectorPort: false,
         config: {
@@ -86,7 +89,7 @@ export default defineConfig(async ({ command }) => {
               ],
             }
           : {}),
-      }),
+      })] : []),
     ],
   };
 });

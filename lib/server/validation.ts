@@ -44,6 +44,8 @@ function email(value: unknown, allowEmpty = false) {
 }
 export function validateInquiry(value: unknown): InquiryInput {
   const data = object(value);
+  const requestId = data.requestId === undefined ? undefined : text(data.requestId, "Request identifier", 36, 36);
+  if (requestId && !/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(requestId)) throw new RequestError("Please refresh the quote form and try again.");
   if (data.website) throw new RequestError("Unable to submit this request.");
   if (data.consent !== true) throw new RequestError("Please agree to be contacted about your request.");
   if (!["assisted", "btc", "usdt"].includes(String(data.paymentPreference))) throw new RequestError("Please choose a payment preference.");
@@ -58,8 +60,13 @@ export function validateInquiry(value: unknown): InquiryInput {
     return { productId, quantity };
   });
   return {
+    requestId,
     name: text(data.name, "Name", 2, 120), email: email(data.email),
-    phone: optional(data.phone, "Phone", 40), postcode: optional(data.postcode, "Postal code", 24),
+    phone: optional(data.phone, "Phone", 40),
+    addressLine1: text(data.addressLine1, "Street address", 3, 200),
+    addressLine2: optional(data.addressLine2, "Address line 2", 200),
+    city: text(data.city, "City", 2, 100), state: text(data.state, "State / region", 2, 100),
+    postcode: text(data.postcode, "ZIP / postal code", 2, 24), country: text(data.country, "Country", 2, 100),
     message: optional(data.message, "Message", 2000),
     paymentPreference: data.paymentPreference as InquiryInput["paymentPreference"], items, consent: true,
   };

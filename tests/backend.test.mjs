@@ -21,7 +21,8 @@ const quoteUrl = await moduleUrl("../lib/server/quote.ts", { '"./validation"': J
 const { quoteItems } = await import(quoteUrl);
 const { adminPolicy } = await import(await moduleUrl("../lib/server/auth-policy.ts"));
 const { publicProduct } = await import(await moduleUrl("../lib/public-product.ts"));
-const goodInquiry = { name: "Alex Rider", email: "alex@example.com", paymentPreference: "assisted", items: [{ productId: "travel", quantity: 1 }], consent: true };
+const { sameInquiryRequest } = await import(await moduleUrl("../lib/server/inquiry-request.ts"));
+const goodInquiry = { name: "Alex Rider", email: "alex@example.com", addressLine1: "123 Example Street", city: "Indianapolis", state: "IN", postcode: "46204", country: "United States", paymentPreference: "assisted", items: [{ productId: "travel", quantity: 1 }], consent: true };
 const product = { id: "travel", name: "Travel scooter", price: 649.99, active: true, availability: "confirm" };
 
 test("customer catalog excludes admin research and preserves the complete gallery", async () => {
@@ -54,10 +55,22 @@ test("validates contact and consent before an inquiry is saved", () => {
   assert.throws(() => validateInquiry({ ...goodInquiry, email: "bad\n@example.com" }), RequestError);
   assert.throws(() => validateInquiry({ ...goodInquiry, consent: false }), RequestError);
   assert.throws(() => validateInquiry({ ...goodInquiry, website: "spam.example" }), RequestError);
+  for (const field of ["addressLine1", "city", "state", "postcode", "country"]) {
+    assert.throws(() => validateInquiry({ ...goodInquiry, [field]: "" }), RequestError);
+  }
+  assert.throws(() => validateInquiry({ ...goodInquiry, addressLine1: "x".repeat(201) }), RequestError);
+  assert.equal(validateInquiry({ ...goodInquiry, addressLine2: "Suite 2" }).addressLine2, "Suite 2");
 });
 test("rejects duplicate IDs, fractional and oversized quantities", () => {
   assert.throws(() => validateInquiry({ ...goodInquiry, items: [{ productId: "travel", quantity: 1 }, { productId: "travel", quantity: 1 }] }), RequestError);
   for (const quantity of [-1, 0, 1.5, 6]) assert.throws(() => validateInquiry({ ...goodInquiry, items: [{ productId: "travel", quantity }] }), RequestError);
+});
+
+test("quote retries match saved customer details without trusting browser prices", () => {
+  const saved = { ...goodInquiry, phone: "", addressLine2: "", message: "", items: [{ productId: "travel", quantity: 1, unitPrice: 649.99, name: "Saved model" }] };
+  assert.equal(sameInquiryRequest(goodInquiry, saved, "assisted"), true);
+  for (const patch of [{ email: "other@example.com" }, { addressLine1: "987 Different Street" }, { items: [{ productId: "travel", quantity: 2 }] }]) assert.equal(sameInquiryRequest({ ...goodInquiry, ...patch }, saved, "assisted"), false);
+  assert.throws(() => validateInquiry({ ...goodInquiry, requestId: "not-a-uuid" }), RequestError);
 });
 test("prices are authoritative and unavailable or archived products cannot be quoted", () => {
   const validated = validateInquiry({ ...goodInquiry, subtotal: 0.01, items: [{ productId: "travel", quantity: 3, unitPrice: 0.01 }] });

@@ -41,10 +41,16 @@ export type StoreSettings = {
 export type AdminStoreSettings = StoreSettings & { btcAddress: string; usdtAddress: string; usdtNetwork: string };
 
 export type InquiryInput = {
+  requestId?: string;
   name: string;
   email: string;
   phone?: string;
-  postcode?: string;
+  addressLine1: string;
+  addressLine2?: string;
+  city: string;
+  state: string;
+  postcode: string;
+  country: string;
   message?: string;
   paymentPreference: "assisted" | "btc" | "usdt";
   items: { productId: string; quantity: number }[];
@@ -52,7 +58,7 @@ export type InquiryInput = {
   consent: boolean;
 };
 
-export type InquiryItem = { productId: string; name: string; quantity: number; unitPrice: number };
+export type InquiryItem = { productId: string; name: string; quantity: number; unitPrice: number; image?: string; brand?: string };
 export type InquiryStatus = "new" | "contacted" | "quoted" | "closed";
 export type Inquiry = {
   id: string;
@@ -61,7 +67,12 @@ export type Inquiry = {
   name: string;
   email: string;
   phone: string;
+  addressLine1?: string;
+  addressLine2?: string;
+  city?: string;
+  state?: string;
   postcode: string;
+  country?: string;
   message: string;
   paymentPreference: InquiryInput["paymentPreference"];
   items: InquiryItem[];

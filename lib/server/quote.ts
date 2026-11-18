@@ -5,7 +5,7 @@ export function quoteItems(items: InquiryInput["items"], products: Product[]): {
   const quoted = items.map(item => {
     const product = products.find(row => row.id === item.productId && row.active);
     if (!product || product.availability === "unavailable") throw new RequestError("One of the selected scooters is no longer available. Please update your cart.", 409);
-    return { productId: product.id, name: product.name, quantity: item.quantity, unitPrice: product.price };
+    return { productId: product.id, name: product.name, quantity: item.quantity, unitPrice: product.price, image: product.image, brand: product.brand };
   });
   return { items: quoted, subtotal: Math.round(quoted.reduce((sum, item) => sum + item.unitPrice * item.quantity, 0) * 100) / 100 };
 }

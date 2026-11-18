@@ -1,0 +1,32 @@
+[Unit]
+Description=Discount Mobility Scooters
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=dms-store
+Group=dms-store
+WorkingDirectory=/srv/discount-mobility-scooter/current
+Environment=NODE_ENV=production
+EnvironmentFile=/etc/discount-mobility-scooter/runtime.env
+ExecStart=/srv/discount-mobility-scooter/runtime/node/bin/node scripts/start-node.mjs
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=15
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/discount-mobility-scooter
+RestrictSUIDSGID=true
+LockPersonality=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+LimitNOFILE=8192
+
+[Install]
+WantedBy=multi-user.target

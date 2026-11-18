@@ -17,7 +17,11 @@
     "db:generate": "drizzle-kit generate",
     "test": "node --test tests/*.test.mjs",
     "audit:security": "node scripts/audit-security.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build:node": "node scripts/sync-public-catalog.mjs && node scripts/build-node.mjs",
+    "start:node": "node scripts/start-node.mjs",
+    "db:migrate:node": "node scripts/migrate-node.mjs",
+    "db:import:node": "node scripts/import-node-data.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -33,6 +37,7 @@
     "lucide-react": "^1.31.0",
     "next": "16.4.6",
     "next-themes": "^0.4.6",
+    "nodemailer": "10.6.0",
     "radix-ui": "^1.6.7",
     "react": "19.2.9",
     "react-day-picker": "^10.0.1",

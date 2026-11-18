@@ -1,34 +1,52 @@
-# Production deployment
+# Production server operations
 
-Primary domain: https://discountmobilityscooter.com
+Store: https://discountmobilityscooter.com
+Admin: https://discountmobilityscooter.com/admin
+Server: administrator@63.141.255.57
 
-Hosted origin: https://discount-mobility-scooters.nearbykidd.chatgpt.site
+## Update from your local terminal
 
-Admin path: `/admin`. Runtime credentials are held in the hosting service, never in Git. Configuration and credential rotation are documented in ADMIN.md.
+After pushing your reviewed changes to the GitHub main branch, run:
 
-## Spaceship DNS
+```powershell
+ssh administrator@63.141.255.57
+```
 
-Add these records using the default TTL. Replace conflicting apex A/AAAA records or parking redirects. Preserve the domain's Spacemail MX and email TXT records.
+Then, in the server terminal:
 
-| Type | Host | Value |
-| --- | --- | --- |
-| A | @ | 162.159.143.30 |
-| A | @ | 172.66.3.26 |
-| TXT | _openai-site-verification | openai-site-verification=SPa6XP2-BeUfFrV3LRU_J8kPRSMDw4kBD4qwtdWyfyk |
-| TXT | _cf-custom-hostname | 4742b5bc-5ed8-4fc6-9173-7f479ec461ae |
+```bash
+sudo /usr/local/sbin/update-discount-mobility-scooter
+sudo systemctl status discount-mobility-scooter --no-pager
+```
 
-The apex hostname has been registered with the hosting provider. After DNS propagates, refresh its validation status and wait for both hostname and TLS certificate to become active. Adding records alone does not prove activation. The `www` hostname is not configured by these apex records.
+The updater fetches the exact main commit, builds as a separate unprivileged build user, runs types/tests/security checks, backs up the existing database, applies additive migrations, switches the release symlink and restarts only this store. A failed application health check restores the previous release when available. It does not replace the server's global Node runtime or other website configurations.
 
-## Runtime and data
+## Paths and useful commands
 
-The Worker requires the D1 `DB` binding and the existing schema in `drizzle/`. Existing data must be preserved. Product images are bundled static assets; no external image service is needed.
+- Releases and private Node 24 runtime: /srv/discount-mobility-scooter
+- Current release: /srv/discount-mobility-scooter/current
+- Runtime secrets: /etc/discount-mobility-scooter/runtime.env (root-only)
+- Database: /var/lib/discount-mobility-scooter/store.sqlite (service-only)
+- Backups: /var/backups/discount-mobility-scooter (root-only)
+- Domain proxy: /etc/nginx/sites-available/discount-mobility-scooter
+- App listens only on 127.0.0.1:3187.
 
-Before opening public access, deploy the code with all four password-authentication secrets, verify protected admin APIs reject anonymous requests, and verify login/logout. The public storefront is a quote workflow: it records requests in admin and reprices cart lines on the server. It does not take payment or send email notifications. Customers can contact the configured business mailbox directly.
+```bash
+sudo systemctl restart discount-mobility-scooter
+sudo journalctl -u discount-mobility-scooter -n 60 --no-pager
+sudo systemctl start discount-mobility-scooter-backup.service
+sudo systemctl list-timers discount-mobility-scooter-backup.timer
+sudo nginx -t
+```
 
-New business contact defaults apply when no saved settings exist. Existing admin settings take precedence. Empty phone and unconfigured wallet fields remain hidden; customers can request payment assistance.
+Change secrets with `sudoedit /etc/discount-mobility-scooter/runtime.env`, then restart this store. Keep the admin password hashed using the format in docs/ADMIN.md; the mailbox password is a separate SMTP credential. Never paste runtime.env into support chats or Git. Do not source this file in Bash: its dollar signs are literal configuration values. Systemd loads it directly.
 
-## Release checks
+## Domain and mail DNS
 
-Run `npm test`, `npm run typecheck`, `npm run audit:security`, and `npm run build`. Publish the matching pushed commit and archive. Check a fresh product detail URL, all eight gallery thumbnails, cart and quote form, admin login/logout, robots.txt and sitemap.xml. Recheck the custom domain only after validation succeeds.
+The apex A record for discountmobilityscooter.com must point to 63.141.255.57. The former 162.159.143.30 and 172.66.3.26 targets belong to the temporary hosting provider and should not be used for this server. Keep Spacemail MX/SPF/DKIM records. Only configure www after adding its DNS alias and a covering certificate.
 
-On November 18, 2026, raw `npm audit` reports 30 affected packages: 14 high, 13 moderate, 3 low and no critical. All high results propagate from [GHSA-fc5q-39xc-vjpf](https://github.com/advisories/GHSA-fc5q-39xc-vjpf), which GitHub withdrew that day; no patched Picomatch release exists. `audit:security` excludes only that exact advisory and its dependency propagation, with mandatory review by December 18, 2026. It still reports the raw counts, blocks every other high/critical advisory and fails closed on incomplete reports or network errors. Moderate/low findings remain; this is not a claim of zero audit findings. The policy and focused tests are in `scripts/audit-policy.mjs` and `tests/audit-policy.test.mjs`.
+Email uses mail.spacemail.com:465 with verified TLS. SPF and DKIM should match the provider's records; DMARC should be configured and monitored. Correct authentication improves delivery but cannot force Gmail's Primary tab or prevent all spam filtering. Admin status means provider acceptance, not guaranteed delivery or reading.
+
+## Security audit
+
+As of November 18, 2026, raw npm audit reports 30 affected packages: 14 high entries from the single advisory GHSA-fc5q-39xc-vjpf that GitHub withdrew that day, plus 13 moderate and 3 low. `npm run audit:security` narrowly excludes that withdrawn advisory through December 18, 2026, blocks all other high/critical findings and fails on incomplete audit/network results. Source: https://github.com/advisories/GHSA-fc5q-39xc-vjpf. This is not a claim of zero vulnerabilities.
