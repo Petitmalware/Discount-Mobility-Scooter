@@ -4,7 +4,7 @@ import { RequestError } from "@/lib/server/validation";
 export const dynamic = "force-dynamic";
 export async function PATCH(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
-    const user = await requireAdmin();
+    const user = await requireAdmin(request);
     const data = await readJson(request) as { status?: unknown };
     if (!data || !["new", "contacted", "quoted", "closed"].includes(String(data.status))) throw new RequestError("Choose a valid inquiry status.");
     await rateLimit(request, "admin-write", 100, user.userId);

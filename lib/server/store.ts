@@ -2,9 +2,10 @@ import { env } from "cloudflare:workers";
 import { seedProducts } from "../catalog";
 import type { AdminStoreSettings, Inquiry, Product, StoreSettings } from "../types";
 import { RequestError } from "./validation";
+import { STORE_CONTACT_EMAIL } from "../site";
 
 export const defaultSettings: AdminStoreSettings = {
-  email: "info@homeretreatdirect.com", phone: "+1 509-205-9501", country: "United States", currency: "USD",
+  email: STORE_CONTACT_EMAIL, phone: "", country: "United States", currency: "USD",
   btcEnabled: true, usdtEnabled: true, btcConfigured: false, usdtConfigured: false,
   btcAddress: "", usdtAddress: "", usdtNetwork: "",
   shippingNote: "Delivery availability, shipping charges and any tax are confirmed in your written quote before payment.",

@@ -17,6 +17,6 @@ jobs:
       - run: npm install --global npm@11.19.1 --ignore-scripts --no-audit --no-fund
       - run: npm run install:ci
       - run: node node_modules/typescript/bin/tsc --noEmit
-      - run: node --test tests/backend.test.mjs
-      - run: npm audit --audit-level=high
+      - run: npm test
+      - run: npm run audit:security
       - run: npm run build

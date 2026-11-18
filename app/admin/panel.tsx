@@ -19,7 +19,7 @@ const freshProduct = (): Product => ({
 });
 const categoryChoices = [{ id: "travel", label: "Travel & portable" }, { id: "folding", label: "Folding" }, { id: "3-wheel", label: "3-wheel" }, { id: "4-wheel", label: "4-wheel" }, { id: "heavy-duty", label: "Heavy-duty" }, { id: "outdoor", label: "Outdoor" }, { id: "standing", label: "Standing" }, { id: "2-wheel", label: "2-wheel" }];
 
-export default function AdminPanel({ email, signOutPath }: { email: string; signOutPath: string }) {
+export default function AdminPanel({ email, signOutPath, authMode }: { email: string; signOutPath: string; authMode: "password" | "chatgpt" }) {
   const [tab, setTab] = useState<"products" | "inquiries" | "settings">("products");
   const [products, setProducts] = useState<Product[]>([]);
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
@@ -72,11 +72,16 @@ export default function AdminPanel({ email, signOutPath }: { email: string; sign
   }
   function field(key: keyof Product, value: unknown) { setEditing(current => current ? { ...current, [key]: value } : current); }
   function setting(key: keyof AdminStoreSettings, value: unknown) { setSettings(current => current ? { ...current, [key]: value } : current); }
+  async function signOut() {
+    setBusy(true); setError("");
+    try { await api("logout", "POST", {}); window.location.replace("/admin"); }
+    catch { setError("Could not sign out. Please try again."); setBusy(false); }
+  }
   const editingGallery = editing ? uniqueGallery(editing.image, editing.images) : [];
   const visibleProducts = products.filter(product => `${product.name} ${product.brand} ${product.category}`.toLowerCase().includes(search.toLowerCase()));
 
   return <>
-    <div className="adm-title"><div><span className="adm-eyebrow">YOUR STORE, AT A GLANCE</span><h1>Store dashboard</h1><p>Manage your catalog, follow up on requests and keep your business details current.</p></div><div className="adm-account"><span>{email}</span><a href={signOutPath} target="_top">Sign out</a></div></div>
+    <div className="adm-title"><div><span className="adm-eyebrow">YOUR STORE, AT A GLANCE</span><h1>Store dashboard</h1><p>Manage your catalog, follow up on requests and keep your business details current.</p></div><div className="adm-account"><span>{email}</span>{authMode === "password" ? <button type="button" onClick={signOut} disabled={busy}>Sign out</button> : <a href={signOutPath} target="_top">Sign out</a>}</div></div>
     <div className="adm-stats"><div><span>Published scooters</span><strong>{products.filter(product => product.active).length}</strong></div><div><span>New inquiries</span><strong>{inquiries.filter(inquiry => inquiry.status === "new").length}</strong></div><div><span>Catalog products</span><strong>{products.length}</strong></div></div>
     <nav className="adm-tabs" aria-label="Store management"><button aria-current={tab === "products" ? "page" : undefined} onClick={() => { setTab("products"); setEditing(null); }}>Products</button><button aria-current={tab === "inquiries" ? "page" : undefined} onClick={() => setTab("inquiries")}>Quote requests</button><button aria-current={tab === "settings" ? "page" : undefined} onClick={() => setTab("settings")}>Business & payment settings</button></nav>
     {error && <div className="adm-alert adm-error" role="alert">{error}</div>}{notice && <div className="adm-alert adm-success" role="status">{notice}</div>}

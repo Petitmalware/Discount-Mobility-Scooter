@@ -10,11 +10,11 @@ BTC/USDT are optional invoice requests. Admin settings store receiving addresses
 
 ## Admin
 
-Visit `/admin` and sign in with the Site owner's authorized ChatGPT account. `ADMIN_EMAILS` is a server runtime secret containing a comma-separated allowlist. It is configured in Sites for the verified owner. No default password or first-visitor administrator exists. Never expose identity headers directly to an untrusted origin when hosting elsewhere. See `docs/ADMIN.md`.
+Visit `/admin` and sign in with the configured business email and password. Password authentication uses hosted secrets; only a salted password hash is stored. Sessions expire after four hours. See `docs/ADMIN.md`.
 
 The admin can add/edit/publish/archive products, update price and specification data, review quote requests and their statuses, and configure contacts, currency, delivery/returns text, and crypto invoice preferences. Empty contact fields are hidden. Currency changes do not convert product prices; reprice the full catalog before changing currency.
 
-Testing contacts: `info@homeretreatdirect.com` and `+1 509-205-9501`. Replace them in Settings before customer use if they are not the store's actual contacts. Requests are stored in the admin dashboard; this version does not send email or SMS notifications.
+The public contact email defaults to `info@discountmobilityscooter.com`. Phone is hidden until configured in Settings. Requests are stored in the admin dashboard; this version does not send email or SMS notifications.
 
 ## Starter catalog
 
@@ -24,19 +24,21 @@ Before accepting paid orders, confirm supplier stock and margins, rights to use 
 
 ## Development
 
-Requires Node 22.13+ and npm 11.19.1, the version used to maintain the portable lockfile and run CI. `npm run install:ci` installs the locked dependencies. `npm run dev` starts the portable preview. `npm run build` emits the Cloudflare Worker and static assets. `node --test tests/backend.test.mjs` checks critical validation boundaries. `node node_modules/typescript/bin/tsc --noEmit` checks application types.
+Requires Node 22.13+ and npm 11.19.1, the version used to maintain the portable lockfile and run CI. `npm run install:ci` installs the locked dependencies. `npm run dev` starts the portable preview. `npm run build` emits the Cloudflare Worker and static assets. `npm test` checks authentication and critical validation boundaries. `node node_modules/typescript/bin/tsc --noEmit` checks application types. `npm run audit:security` checks current dependency advisories at the high/critical threshold.
 
-The application uses Vinext/React, Cloudflare D1, and dispatch-owned ChatGPT authentication. `.openai/hosting.json` contains Site identity and the D1 binding. Runtime secrets stay in the hosting service. Generated output, local credentials, and local database state are ignored.
+The application uses Vinext/React, Cloudflare D1, and password-protected administration. `.openai/hosting.json` contains Site identity and the D1 binding. Runtime secrets stay in the hosting service. Generated output, local credentials, and local database state are ignored.
 
 ## Security boundaries
 
-- Server authorization on every admin operation; explicit email allowlist.
+- Server authorization on every admin operation; salted password verification, signed host-bound sessions, and durable login rate limits.
 - Same-origin JSON writes, bounded bodies, input validation, parameterized SQL, rate limits, and authoritative cart prices.
 - No customer financial data is collected; wallets are withheld from public API responses.
 - Security response headers and a Content Security Policy; inline scripts are allowed for framework hydration.
 - Persistent customer inquiry data is available only to authorized admins. Database hosting/access, backups, retention, and incident procedures remain operational responsibilities.
 
-Local preview identity simulation is loopback-only and excluded from production. A public customer launch needs an explicit Site audience change; the initial deployed Site is private to its owner.
+Local preview identity simulation is loopback-only and excluded from production. The custom production domain is `https://discountmobilityscooter.com`. DNS and certificate activation must complete before that domain serves the storefront. See `docs/DEPLOYMENT.md`.
+
+The November 18 raw npm audit reports 30 affected packages, including 14 high results propagated from the single [withdrawn Picomatch advisory GHSA-fc5q-39xc-vjpf](https://github.com/advisories/GHSA-fc5q-39xc-vjpf), 13 moderate and 3 low. The security gate has one exact advisory exception, expiring after December 18, 2026; it blocks other high/critical findings and audit failures. It does not suppress all Picomatch findings or claim the raw audit is clean. See the release checks in `docs/DEPLOYMENT.md`.
 
 ## Product gallery publishing rule
 

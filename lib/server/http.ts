@@ -3,6 +3,8 @@ import { getChatGPTUser } from "@/app/chatgpt-auth";
 import { database } from "./store";
 import { RequestError } from "./validation";
 import { adminPolicy } from "./auth-policy";
+import { headers } from "next/headers";
+import { adminSessionToken, passwordAuthState, verifyAdminSession } from "./admin-auth";
 export { readJson } from "./request";
 
 export const jsonHeaders = {
@@ -19,14 +21,23 @@ export function failure(error: unknown): Response {
   return json({ error: "We couldn’t complete that request. Please try again or contact the store." }, 503);
 }
 
-export async function adminIdentity() {
+export async function adminIdentity(request?: Request) {
+  const state = passwordAuthState(env);
+  if (state.mode === "password") {
+    const requestHeaders = request?.headers ?? await headers();
+    const token = adminSessionToken(requestHeaders.get("cookie"));
+    const host = request ? new URL(request.url).host : requestHeaders.get("host") ?? "";
+    const authorized = Boolean(state.config && token && await verifyAdminSession(token, state.config, host));
+    const user = authorized && state.config ? { userId: `password-admin:${state.config.email}`, email: state.config.email, displayName: state.config.email, fullName: null } : null;
+    return { user, authorized, configured: state.configured, mode: state.mode };
+  }
   const user = await getChatGPTUser();
   const setting = (env as Cloudflare.Env & { ADMIN_EMAILS?: string }).ADMIN_EMAILS ?? "";
-  return { user, ...adminPolicy(user?.email, setting) };
+  return { user, ...adminPolicy(user?.email, setting), mode: state.mode };
 }
 
-export async function requireAdmin() {
-  const identity = await adminIdentity();
+export async function requireAdmin(request?: Request) {
+  const identity = await adminIdentity(request);
   if (!identity.user) throw new RequestError("Sign in to access the administration area.", 401);
   if (!identity.authorized) throw new RequestError("This account is not authorized to manage the store.", 403);
   return identity.user;

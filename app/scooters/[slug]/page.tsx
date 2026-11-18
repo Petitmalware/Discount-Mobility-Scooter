@@ -5,7 +5,11 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}) {
   const {slug}=await params;
   const product=(await readProducts()).find(p=>p.slug===slug);
-  return product?{title:`${product.name} | Discount Mobility Scooters`,description:product.description}:{title:"Scooter not found | Discount Mobility Scooters"};
+  return product?{
+    title:`${product.name} | Discount Mobility Scooters`,
+    description:product.description,
+    alternates:{canonical:`/scooters/${product.slug}`},
+  }:{title:"Scooter not found | Discount Mobility Scooters",robots:{index:false,follow:false}};
 }
 export default async function ScooterPage({params}: {params: Promise<{slug:string}>}) {
   const {slug} = await params;

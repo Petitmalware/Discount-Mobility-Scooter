@@ -2,13 +2,13 @@ import { failure, json, rateLimit, readJson, requireAdmin } from "@/lib/server/h
 import { readProducts, saveProduct } from "@/lib/server/store";
 import { RequestError, validateProduct } from "@/lib/server/validation";
 export const dynamic = "force-dynamic";
-export async function GET() {
-  try { await requireAdmin(); return json({ products: await readProducts(true) }); }
+export async function GET(request: Request) {
+  try { await requireAdmin(request); return json({ products: await readProducts(true) }); }
   catch (error) { return failure(error); }
 }
 export async function POST(request: Request) {
   try {
-    const user = await requireAdmin();
+    const user = await requireAdmin(request);
     const data = await readJson(request, 48_000);
     await rateLimit(request, "admin-write", 100, user.userId);
     const product = validateProduct(data);
